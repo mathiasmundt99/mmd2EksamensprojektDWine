@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42.72" height="107.307" viewBox="0 0 42.72 107.307">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6a121e"/>
+      <stop offset="1" stop-color="#900a16"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_295" data-name="Group 295" transform="translate(-332.111 -2171.055)">
+    <path id="Icon_ionic-ios-bookmark" data-name="Icon ionic-ios-bookmark" d="M9,11.629v98.016c0,.851.634,1.341,1.068.825L29.559,86.74a.993.993,0,0,1,1.6,0l19.491,23.73c.434.516,1.068.026,1.068-.825V11.629c0-4.565-2.386-8.254-5.34-8.254H14.34C11.386,3.375,9,7.064,9,11.629Z" transform="translate(323.111 2167.68)" fill="url(#linear-gradient)"/>
+    <text id="Tysk" transform="translate(346.471 2211.398) rotate(90)" fill="#f2f2f2" font-size="18" font-family="SegoeUI, Segoe UI"><tspan x="-16.866" y="0">Tysk</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<svg id="Group_305" data-name="Group 305" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42.72" height="120" viewBox="0 0 42.72 120">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6a121e"/>
+      <stop offset="1" stop-color="#900a16"/>
+    </linearGradient>
+  </defs>
+  <path id="Icon_ionic-ios-bookmark" data-name="Icon ionic-ios-bookmark" d="M9,12.605V122.216c0,.952.634,1.5,1.068.923L29.559,96.6a.933.933,0,0,1,1.6,0l19.491,26.537c.434.577,1.068.029,1.068-.923V12.605c0-5.106-2.386-9.23-5.34-9.23H14.34C11.386,3.375,9,7.5,9,12.605Z" transform="translate(-9 -3.375)" fill="url(#linear-gradient)"/>
+  <text id="Østrigsk" transform="translate(14.86 46.5) rotate(90)" fill="#f2f2f2" font-size="18" font-family="SegoeUI, Segoe UI"><tspan x="-32.555" y="0">Østrigsk</tspan></text>
+</svg>

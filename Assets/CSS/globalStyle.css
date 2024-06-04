@@ -58,3 +58,175 @@ body{
     padding: 0;
     line-height: 1.5;
 }
+
+/* link styling */
+a:link {
+    color:#F2F2F2 ;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: #F2F2F2;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--red);
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  /* nav styling */
+header{
+    background-color: var(--ultraDarkRed);
+    min-height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+li{
+    list-style: none;
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    
+}
+
+.navbar img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.burgerMenu{
+    display: none;
+    cursor:pointer;
+}
+
+.bar{
+ display: block;
+ width: 25px;
+height: 3px;
+margin: 5px auto;
+transition: all 0.4s ease-in-out;
+background-color:#F2F2F2 ;
+}
+
+.navbar ul li{
+    position: relative;
+}
+
+.navbar ul li ul.dropDown li{
+    display: block;
+}
+
+.navbar ul li ul.dropDown{
+    width: 130%;
+    background-color: var(--ultraDarkRed);
+    position: absolute;
+    z-index: 999;
+    padding:0;
+    display: none;
+}
+
+.navbar ul li ul.dropDown li{
+    padding-top:0.5rem ;
+    margin: 1rem;
+}
+
+.navbar ul li:hover ul.dropDown{
+    display: block;
+}
+
+
+@media(max-width: 768px){
+    .burgerMenu{
+        display: block;
+    }
+    .burgerMenu.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .burgerMenu.active .bar:nth-child(1){
+        transform:translateY(8px) rotate(45deg) ;
+    }
+    .burgerMenu.active .bar:nth-child(3){
+        transform:translateY(-8px) rotate(-45deg) ;
+    }
+
+    .navMenu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--ultraDarkRed);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .navItem{
+        margin: 1rem 0;
+    }
+
+    .navMenu.active{
+        left: 0;
+        margin: 0;
+        margin-top: 20px;
+    }
+}
+
+
+/* footer styling */
+
+footer{
+    background-color: var(--footerBlack);
+}
+
+footer h3{
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.mail, .mobile, .location{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.socialIcons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+
+.aabningstider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+    text-align: center;
+    gap: 2rem;
+}

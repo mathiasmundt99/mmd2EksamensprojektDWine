@@ -1,13 +1,57 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+h1{
+font-family: "Playfair Display", serif;
+font-weight:500;
+font-size: 32px;
+color: #F2F2F2;
+}
+
+h2{
+font-family: "Playfair Display", serif;
+font-weight:400;
+font-size: 24px;
+color: #F2F2F2;
+
+}
+
+h3{
+font-family: "Playfair Display", serif;
+font-weight:400;
+font-size: 20px;
+color: #F2F2F2;
+
+}
+
+p{
+font-family: "Mulish", sans-serif;
+font-weight:400;
+font-size: 16px;
+color: #F2F2F2;
+
+}
+
 *,
 *::before,
 *::after{
     box-sizing: border-box;
 }
 
+
 :root{
     --stdPadding: 0px;
     --stdMargin: 0px;
+    --icon:#B2857F;
+    --rosé:#FF8574;
+    --ultraDarkRed:#4C121E;
+    --darkRed:#6A121E;
+    --red:#9C121E;
+    --footerBlack:#110106;
+    --background:#262022;
 }
+
 
 body{
     margin: 0;

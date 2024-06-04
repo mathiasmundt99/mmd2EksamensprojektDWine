@@ -18,9 +18,11 @@ section {
   .localNav{
     background-color: var(--darkRed);
     padding: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     z-index: 1000;
     position: sticky;
-    top: 0;
+    top: 5px;
   }
 
   .localNav a {

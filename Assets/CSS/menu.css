@@ -1,0 +1,43 @@
+body {
+    background-color: var(--background);
+  }
+
+section {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 2rem;
+  }
+  article{
+    padding: 0.5rem;
+  }
+
+  .introSection{
+    text-align: center;
+  }
+
+  .localNav{
+    background-color: var(--darkRed);
+    padding: 1.5rem;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+  }
+
+  .localNav a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #F2F2F2;
+    margin: 2.5%;
+  }
+
+  .typeTitle{
+    text-align: center;
+  }
+
+  .allFood{
+    text-align: center;
+  }
+
+  .foodItem{
+    padding: 1rem;
+  }

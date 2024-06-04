@@ -1,0 +1,179 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+h1{
+font-family: "Playfair Display", serif;
+font-weight:500;
+font-size: 32px;
+color: #F2F2F2;
+}
+
+h2{
+font-family: "Playfair Display", serif;
+font-weight:400;
+font-size: 24px;
+color: #F2F2F2;
+
+}
+
+h3{
+font-family: "Playfair Display", serif;
+font-weight:400;
+font-size: 20px;
+color: #F2F2F2;
+margin: 0;
+
+
+}
+
+p{
+font-family: "Mulish", sans-serif;
+font-weight:400;
+font-size: 16px;
+color: #F2F2F2;
+
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --stdPadding: 0px;
+    --stdMargin: 0px;
+    --text: #F2F2F2;
+    --icon:#B2857F;
+    --rosé:#FF8574;
+    --ultraDarkRed:#4C121E;
+    --darkRed:#6A121E;
+    --red:#9C121E;
+    --footerBlack:#110106;
+    --background:#262022;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    height: 100vh;
+    
+}
+
+/*------- forside -------*/
+
+
+.homeHeroImage{
+    background-image: url(../Img/mobil_img/Forside/hero1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+}
+.homeHeroText{
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.homeH1{
+    font-size: 48px;
+    font-weight: 500;
+}
+.aboutDwineBar{
+    padding: 15% 10%;
+    background-color: var(--background);
+    text-align: center;
+}
+/* gradient kanp */
+.gradientBtn{
+    background:linear-gradient(var(--background), var(--background)) padding-box,
+    linear-gradient(#D97264, #F25D6A) border-box;
+    color: var(--text);
+    font-size: 14px;
+    font-family: "Mulish", sans-serif;
+    border-radius: 5px;
+    padding: 10px 40px;
+    border: 2.5px solid transparent;
+    margin: 1rem;
+    cursor: pointer;
+}
+/* ------------- */
+.homeIcon{
+    padding: 15% 10%;
+    background-color: var(--ultraDarkRed);
+    text-align: center;
+}
+.threeIcons{
+    margin-top: 3rem ;
+}
+.threeReasonIcon{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.homeWine{
+    padding: 15% 10%;
+    background-color: var(--background);
+    text-align: center;
+}
+hr{
+    width: 8rem;
+    border: 0;
+    height: 1px;
+    background-color: var(--icon);
+}
+.introIcon{
+    padding: 2rem;
+    display: flex;
+}
+/* åbningstider */
+.openingsHoursSection{
+    background-image: url(../Img/mobil_img/Forside/åbningstiderBg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex; /* Bruger flexbox til at centere boksen*/
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    position: relative;
+}
+.openingHoursBox{
+    border: 5px white solid;
+    border-top: none;
+    padding-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.1);  
+    position: relative;
+    
+}
+.openingHours{
+    margin: -20px 0 20px 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+th, td{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text);
+    font-family: "Mulish", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 35px 5px 35px;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ----------- */
+
+
+
+
+
+/* --------------------- */

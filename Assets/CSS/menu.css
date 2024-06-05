@@ -13,6 +13,7 @@ section {
 
   .introSection{
     text-align: center;
+    margin-top: 6rem;
   }
 
   .localNav{
@@ -42,4 +43,82 @@ section {
 
   .foodItem{
     padding: 1rem;
+  }
+
+  @media  screen and (min-width: 1024px) {
+    body {
+      background-color: var(--background);
+    }
+
+    /* Midlertidligt indtil det er kommet ind i den globale */
+    h1{
+      font-family: "Playfair Display", serif;
+      font-weight:500;
+      font-size: 32px;
+      color: #F2F2F2;
+      }
+      
+      h2{
+      font-family: "Playfair Display", serif;
+      font-weight:400;
+      font-size: 24px;
+      color: #F2F2F2;
+      
+      }
+      
+      h3{
+      font-family: "Playfair Display", serif;
+      font-weight:400;
+      font-size: 20px;
+      color: #F2F2F2;
+      
+      }
+      
+      p{
+      font-family: "Mulish", sans-serif;
+      font-weight:400;
+      font-size: 16px;
+      color: #F2F2F2;
+      
+      }
+      /*-----------------------------------------------------------------*/
+      /* Start articles setup */
+    .introSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .introArticle {
+        text-align: center;
+        margin-bottom: 20px;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    
+    .bottomArticles {
+        display: flex;
+        justify-content: center;
+        gap: 20px; 
+        width: 100%;
+        max-width: 1200px; 
+    }
+    
+    .bottomArticles article {
+        flex: 1;
+        min-width: 300px; 
+    }
+
+    /* Food items */
+    .allFood {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 20px; 
+      max-width: 1200px; 
+      margin: 0 auto; 
+      padding: 20px; 
+  }
+
+ 
+    
   }

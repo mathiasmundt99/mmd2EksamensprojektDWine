@@ -28,3 +28,70 @@
 .iconMV{
     display: flex;
 }
+
+.månedensVine article{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2rem;
+}
+
+.månedensVine H3, .månedensVine p{
+    text-align: center;
+}
+
+.månedensVine img:nth-of-type(1){
+    width: 40px;
+    position: absolute;
+    right: 5%;
+    top: 3%;
+}
+
+.månedensVine img:nth-of-type(2){
+width: 100%;
+  max-width: 60%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.månedensVine article:nth-of-type(4) h3{
+    max-width: 60vw;
+    margin-left: 10%;
+}
+
+.månedensVine article:nth-of-type(9) h3{
+    max-width: 50vw;
+    margin-left: 20%;
+}
+
+@media(min-width: 768px){
+    .månedensVine{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(min-width: 1024px){
+    .månedensVine{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .månedensVine img:nth-of-type(1){
+        right: -2%;
+    }
+
+    .månedensVine article{
+        align-self: flex-start;
+    }
+}
+
+
+

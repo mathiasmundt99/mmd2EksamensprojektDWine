@@ -37,9 +37,9 @@ winePosts.forEach(winePost =>{
 
     title.textContent = winePost.acf.title
     label.src = winePost.acf.origin
-    image.src = winePost.acf.image.sizes.medium
+    image.src = winePost.acf.image.sizes.large
     description.textContent = winePost.acf.description
-    price.textContent = winePost.acf.price
+    price.textContent = "Pris pr. glas:"+ winePost.acf.price
 
     articleEl.append(title,label,image,description,price)
 

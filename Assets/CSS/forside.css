@@ -72,51 +72,59 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .homeHeroText{
     text-align: center;
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%,-50%);
 }
 .homeH1{
     font-size: 48px;
-    font-weight: 500;
+    margin: 0;
 }
+
 .aboutDwineBar{
-    padding: 15% 10%;
+    padding: 10%;
     background-color: var(--background);
     text-align: center;
 }
+
 /* gradient kanp */
+a{
+    text-decoration: none;
+    color: var(--text);
+}
 .gradientBtn{
     background:linear-gradient(var(--background), var(--background)) padding-box,
     linear-gradient(#D97264, #F25D6A) border-box;
     color: var(--text);
     font-size: 14px;
-    font-family: "Mulish", sans-serif;
     border-radius: 5px;
     padding: 10px 40px;
     border: 2.5px solid transparent;
-    margin: 1rem;
+    margin-top: 1rem;
     cursor: pointer;
 }
-/* ------------- */
+.gradientBtn:hover{
+    background-image: linear-gradient(to right,#f18475 0%, #F25D6A 20%, #e96b5a 90%, #ff7e6d 100%);
+    color: white;
+}
+
 .homeIcon{
-    padding: 15% 10%;
+    padding:10%;
     background-color: var(--ultraDarkRed);
     text-align: center;
 }
 .threeIcons{
-    margin-top: 3rem ;
+    margin-top: 4rem ;
 }
 .threeReasonIcon{
     margin-left: 20%;
     margin-right: 20%;
 }
 .homeWine{
-    padding: 15% 10%;
+    padding: 10%;
     background-color: var(--background);
     text-align: center;
 }
@@ -127,8 +135,9 @@ hr{
     background-color: var(--icon);
 }
 .introIcon{
-    padding: 2rem;
+    margin: 2rem;
     display: flex;
+    align-items: center;
 }
 /* åbningstider */
 .openingsHoursSection{
@@ -136,22 +145,21 @@ hr{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex; /* Bruger flexbox til at centere boksen*/
+    display: flex; 
     justify-content: center;
-    align-items: center;
-    height: 60vh;
-    position: relative;
+
 }
 .openingHoursBox{
     border: 5px white solid;
-    border-top: none;
-    padding-bottom: 20px;
+    padding: 20px 0px 20px 0px;
     background-color: rgba(0, 0, 0, 0.1);  
-    position: relative;
-    
+    max-width: 500px;
+    min-width: 350px;
+    width: 100%;
+    margin: 10%;
 }
 .openingHours{
-    margin: -20px 0 20px 0px;
+    margin-bottom: 20px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -170,8 +178,155 @@ table{
     margin-right: auto;
 }
 
-/* ----------- */
+/*Progressiv disclosure (entry points)*/
+.entryPoints{
+    background-color: var(--background);
+    padding: 10%;
+}
+.mainCard{
+    background-color: var(--darkRed);
+}
+.entrypointLine{
+    width: 6rem;
+    background-color: var(--text);
+    margin: 1rem auto;
+}
+.firstSubCard{
+    background-image: url(../Img/mobil_img/focused_Entry_Points/quiz_Aften.png);
+}
+.secondSubCard{
+    background-image: url(../Img/mobil_img/focused_Entry_Points/jubilæumsfest.png);
+}
+.cards{
+    margin-top: 10px;
+    padding: 40px 30px 40px 30px;
+    max-width: 360px;
+    height: 420px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+/* white button */
+.eventsBtn{
+    cursor: pointer;
+    color: var(--text);
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 10px 40px;
+    border: 2.5px solid var(--text);
+    margin: 1rem;
+    background-color: transparent;
+}
+.eventsBtn:hover{
+    background-color: var(--text);
+    color: var(--background);
+}
+/* ------------ */
 
+@media screen and (max-width: 699px){
+
+    .aboutDwineImagesSection{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 700px){
+
+.aboutDwineContent{
+    text-align: left;
+    
+}
+.aboutDwineContent{
+    max-width: 50%;
+    padding-right: 1rem;
+}
+.aboutDwineBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.image1{
+    max-width: 70%;
+    position: absolute;
+    z-index: 1;
+    top: 230px;
+    left: -50px;
+}
+.image2{
+    max-width: 80%;
+    position: relative;
+}
+.aboutDwineImagesSection{
+    text-align: right;
+    position: relative;
+}
+.threeReasonIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.threeIcons{
+    padding: 3rem;
+}
+.entryPoints{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
+
+@media screen and (min-width: 900px){
+    
+    .homeHeroImage{
+        height: 90vh;
+    }
+
+    h1, .homeH1{
+        font-size: 88px;
+    }
+
+    h2{
+        font-size: 64px;
+    }
+    
+    h3{
+        font-size: 48px;
+    }
+    
+    p{
+        font-size: 24px;
+    }
+    a{
+        font-size: 20px;
+    }
+    th, td{
+        font-size: 28px;
+        padding: 10px 100px 10px 100px;
+    }
+    .openingHoursBox{
+        max-width: 900px;
+        padding: 3rem;
+    }
+    .cards{
+        height: 620px;
+        max-width: 480px;
+    }
+    .entryPoints{
+        /* display: flex;
+        justify-content: space-between;
+        gap: 1rem; */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+        gap: 1rem;
+        padding: 5%;
+    }
+}
 
 
 

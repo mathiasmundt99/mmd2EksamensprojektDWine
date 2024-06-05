@@ -100,6 +100,7 @@ width: 100%;
         margin-left: 3%;
     margin-right: 3%;
     gap: 1rem;
+    position: relative;
     }
 
     .månedensVine img:nth-of-type(1){
@@ -108,8 +109,16 @@ width: 100%;
 
     .månedensVine article{
         align-self: flex-start;
+        position: relative;
     }
 
+    .månedensVine article:hover{
+        background-image: url(../Img/desktop_img/månedens_vin/hover_vin.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        transition-duration: 10s;
+    }
+   
     .iconMV hr{
         width: 400px;      
 }
@@ -117,6 +126,7 @@ width: 100%;
 .heroMV{
     background-image: url(../Img/desktop_img/månedens_vin/hero.png);
     min-height: 60vh;
+
 }
 }
 

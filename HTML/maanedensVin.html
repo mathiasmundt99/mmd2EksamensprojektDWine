@@ -11,9 +11,15 @@
   <body>
     <header>
       <nav class="navbar">
-        <a href="index.html"
-          ><img src="../Assets/Img/mobil_img/header/logo.png" alt="Logo"
-        /></a>
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="../assets/img/desktop_img/forside/logo.png" />
+          <img
+            src="../Assets/Img/mobil_img/header/logo.png"
+            alt="logo"
+            loading="lazy" />
+        </picture>
         <ul class="navMenu">
           <li class="navItem"><a href="#" class="navLink">Månedens vine</a></li>
           <li class="navItem"><a href="#" class="navLink">Menu</a></li>
@@ -65,9 +71,15 @@
       </section>
       <section class="iconMV">
         <hr />
-        <img
-          src="../Assets/Img/mobil_img/månedens_vin/ikon1.svg"
-          alt="Vintønde ikon" />
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="../assets/img/desktop_img/månedens_vin/ikon1.svg" />
+          <img
+            src="../Assets/Img/mobil_img/månedens_vin/ikon1.svg"
+            alt="Vintønde ikon"
+            loading="lazy" />
+        </picture>
         <hr />
       </section>
       <section class="månedensVine"></section>

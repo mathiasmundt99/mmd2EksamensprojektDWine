@@ -28,15 +28,16 @@
 .iconMV{
     display: flex;
 }
-
+.månedensVine{
+    margin-left: 10%;
+    margin-right: 10%;
+}
 .månedensVine article{
     display: flex;
     justify-content: center;
     align-self: center;
     flex-direction: column;
     position: relative;
-    margin-left: 10%;
-    margin-right: 10%;
     margin-top: 2rem;
 }
 
@@ -75,13 +76,30 @@ width: 100%;
     .månedensVine{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        margin-left: 5%;
+    margin-right: 5%;
+    }
+
+    .heroMV{
+        background-image: url(../Img/desktop_img/månedens_vin/hero.png);
+        min-height: 40vh;
     }
 }
 
 @media(min-width: 1024px){
+    .heroMV h1{
+        font-size:88px ;
+    }
+    .introTextMV p{
+        font-size: 24px;
+    }
+
     .månedensVine{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 3%;
+    margin-right: 3%;
+    gap: 1rem;
     }
 
     .månedensVine img:nth-of-type(1){
@@ -91,7 +109,15 @@ width: 100%;
     .månedensVine article{
         align-self: flex-start;
     }
+
+    .iconMV hr{
+        width: 400px;      
 }
 
+.heroMV{
+    background-image: url(../Img/desktop_img/månedens_vin/hero.png);
+    min-height: 60vh;
+}
+}
 
 

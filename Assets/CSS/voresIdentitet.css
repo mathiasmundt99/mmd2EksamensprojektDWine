@@ -54,3 +54,40 @@ ul{
     color: #F2F2F2;
     padding: 0;
 }
+
+/*Progressiv disclosure (entry points)*/
+.entryPoints{
+    background-color: var(--background);
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mainCard{
+    background-color: var(--darkRed);
+}
+.entrypointLine{
+    width: 6rem;
+    background-color: var(--text);
+    margin: 1rem auto;
+}
+.firstSubCard{
+    background-image: url(../Img/mobil_img/focused_Entry_Points/quiz_Aften.png);
+}
+.secondSubCard{
+    background-image: url(../Img/mobil_img/focused_Entry_Points/jubilæumsfest.png);
+}
+.cards{
+    margin-top: 10px;
+    padding: 40px 30px 40px 30px;
+    max-width: 360px;
+    height: 420px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+/* ---- */

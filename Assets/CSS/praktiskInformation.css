@@ -85,3 +85,52 @@ iframe{
 .gavekort h3{
     text-align: center;
 }
+
+@media(min-width: 768px){
+    
+    .heroPI{
+        background-image: url(../Img/desktop_img/praktisk_Information/hero.png);
+        min-height: 40vh;
+    }
+}
+
+@media(min-width: 1024px){
+.heroMV{
+    background-image: url(../Img/desktop_img/månedens_vin/hero.png);
+    min-height: 60vh;
+}
+
+.heroPI h1{
+    font-size:88px ;
+}
+
+.faciliteter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.indendørs, .udendørs{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gavekort{
+    max-width: 60%;
+}
+
+.gavekort{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gavekort h3, .gavekort p{
+    grid-column: 1/2;
+}
+
+}

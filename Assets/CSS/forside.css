@@ -182,6 +182,9 @@ table{
 .entryPoints{
     background-color: var(--background);
     padding: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .mainCard{
     background-color: var(--darkRed);
@@ -214,20 +217,21 @@ table{
 .eventsBtn{
     cursor: pointer;
     color: var(--text);
-    font-size: 14px;
+    font-size: 16px;
     border-radius: 5px;
     padding: 10px 40px;
     border: 2.5px solid var(--text);
     margin: 1rem;
     background-color: transparent;
 }
+
 .eventsBtn:hover{
     background-color: var(--text);
     color: var(--background);
 }
 /* ------------ */
 
-@media screen and (max-width: 699px){
+@media screen and (max-width: 767px){
 
     .aboutDwineImagesSection{
         display: none;
@@ -268,64 +272,50 @@ table{
 .threeReasonIcon{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0;
 }
 .threeIcons{
     padding: 3rem;
 }
 .entryPoints{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    padding: 5%;
 }
+.entryTitle{
+    font-size: 20px;
+}
+
 }
 
 @media screen and (min-width: 1024px){
+    h3{
+        font-size: 30px;
+    }
     
     .homeHeroImage{
         height: 90vh;
     }
 
-    h1, .homeH1{
-        font-size: 88px;
-    }
-
-    h2{
-        font-size: 64px;
-    }
-    
-    h3{
-        font-size: 48px;
-    }
-    
-    p{
-        font-size: 24px;
-    }
-    a{
+    .btnFont{
         font-size: 20px;
     }
     th, td{
-        font-size: 28px;
+        font-size: 20px;
         padding: 10px 100px 10px 100px;
     }
     .openingHoursBox{
-        max-width: 900px;
+        max-width: 750px;
         padding: 3rem;
     }
-    .cards{
-        height: 620px;
-        max-width: 480px;
+    .threeReasonIconDesktop{
+        width: 100px;
+        height: 100px;
     }
-    .entryPoints{
-        /* display: flex;
-        justify-content: space-between;
-        gap: 1rem; */
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-        gap: 1rem;
-        padding: 5%;
-    }
+
+
 }
 
 

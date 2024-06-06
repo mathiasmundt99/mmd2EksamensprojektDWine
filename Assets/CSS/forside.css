@@ -235,7 +235,7 @@ table{
 }
 
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 768px){
 
 .aboutDwineContent{
     text-align: left;
@@ -281,7 +281,7 @@ table{
 }
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 1024px){
     
     .homeHeroImage{
         height: 90vh;

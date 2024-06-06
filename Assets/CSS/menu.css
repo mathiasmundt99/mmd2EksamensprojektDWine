@@ -44,81 +44,155 @@ section {
   .foodItem{
     padding: 1rem;
   }
+  @media  screen and (min-width: 768px){
+    
 
-  @media  screen and (min-width: 1024px) {
-    body {
-      background-color: var(--background);
+    /* Nav */
+    .localNav{
+      background-color: var(--darkRed);
+      text-align: center;
+      padding: 1.5rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      z-index: 1000;
+      position: sticky;
+      top: 5px;
+    }
+  
+  .localNav a {
+      font-size: 25px;
+      text-decoration: none;
+      color: #F2F2F2;
+      margin: 5%;
     }
 
-    /* Midlertidligt indtil det er kommet ind i den globale */
-    h1{
-      font-family: "Playfair Display", serif;
-      font-weight:500;
-      font-size: 32px;
-      color: #F2F2F2;
-      }
-      
+    /* Food section */
+    .allFood {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 2rem; 
+      max-width: 80%;
+      margin: 0 auto; 
+      padding: 2rem; 
+  }
+
+  .typeTitle {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .foodItem img {
+    width: 100%; 
+    max-width: 100%; 
+}
+
+  }
+
+  @media  screen and (min-width: 1024px) {
+    section {
+      padding-left: 5%;
+      padding-right: 5%;
+      margin-bottom: 2rem;
+    }
+
+  
+      h1{
+        font-family: "Playfair Display", serif;
+        font-weight:500;
+        font-size: 60px;
+        color: #F2F2F2;
+        }
+
       h2{
-      font-family: "Playfair Display", serif;
-      font-weight:400;
-      font-size: 24px;
-      color: #F2F2F2;
-      
-      }
-      
+        font-family: "Playfair Display", serif;
+        font-weight:400;
+        font-size: 45px;
+        color: #F2F2F2;
+        }
+
       h3{
-      font-family: "Playfair Display", serif;
-      font-weight:400;
-      font-size: 20px;
-      color: #F2F2F2;
-      
-      }
-      
+        font-family: "Playfair Display", serif;
+        font-weight:400;
+        font-size: 30px;
+        color: #F2F2F2;
+        }
+
       p{
-      font-family: "Mulish", sans-serif;
-      font-weight:400;
-      font-size: 16px;
-      color: #F2F2F2;
-      
-      }
+        font-family: "Mulish", sans-serif;
+        font-weight:400;
+        font-size: 20px;
+        color: #F2F2F2;
+        }
       /*-----------------------------------------------------------------*/
+
+      /* Nav */
+    .localNav{
+        background-color: var(--darkRed);
+        text-align: center;
+        padding: 1.5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        z-index: 1000;
+        position: sticky;
+        top: 5px;
+      }
+    
+    .localNav a {
+        font-size: 30px;
+        text-decoration: none;
+        color: #F2F2F2;
+        margin: 5%;
+      }
+
       /* Start articles setup */
-    .introSection {
+  .introSection {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     
-    .introArticle {
+  .introArticle {
         text-align: center;
         margin-bottom: 20px;
-        padding-left: 20%;
-        padding-right: 20%;
+        padding-left: 15%;
+        padding-right: 15%;
     }
     
-    .bottomArticles {
+  .bottomArticles {
         display: flex;
         justify-content: center;
+        text-align: left;
         gap: 20px; 
         width: 100%;
         max-width: 1200px; 
     }
     
-    .bottomArticles article {
+  .bottomArticles article {
         flex: 1;
         min-width: 300px; 
     }
 
     /* Food items */
-    .allFood {
+  .allFood {
       display: grid;
       grid-template-columns: repeat(3, 1fr); 
-      gap: 20px; 
-      max-width: 1200px; 
+      gap: 2rem; 
+      max-width: 80%;
       margin: 0 auto; 
-      padding: 20px; 
+      padding: 2rem; 
   }
 
- 
-    
+  .typeTitle {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .foodItem img {
+    width: 100%; 
+    max-width: 100%; 
+} 
   }

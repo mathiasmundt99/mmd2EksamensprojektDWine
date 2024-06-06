@@ -28,6 +28,7 @@
 .eventsCTA{
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 10%;
 }
 
 .eventsCTA article{
@@ -58,6 +59,7 @@
         margin-left: 5%;
     margin-right: 5%;
     gap: 2rem;
+    justify-items: center;
     }
 
     .heroMV{
@@ -67,12 +69,10 @@
 
     .eventsCTA article{
         align-self: flex-start;
+        width: 30vw;
     }
 
-    .eventsCTA img{
-    width: auto;
-      max-height:40% ;
-    }
+   
    
 }
 

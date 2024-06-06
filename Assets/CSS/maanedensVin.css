@@ -53,8 +53,7 @@
 }
 
 .månedensVine img:nth-of-type(2){
-width: 100%;
-  max-width: 60%;
+  max-width: 40%;
   height: auto;
   display: block;
   margin-left: auto;
@@ -63,8 +62,8 @@ width: 100%;
 }
 
 .månedensVine article:nth-of-type(4) h3{
-    max-width: 60vw;
-    margin-left: 10%;
+    max-width: 90%;
+    
 }
 
 .månedensVine article:nth-of-type(9) h3{
@@ -87,18 +86,13 @@ width: 100%;
 }
 
 @media(min-width: 1024px){
-    .heroMV h1{
-        font-size:88px ;
-    }
-    .introTextMV p{
-        font-size: 24px;
-    }
+
 
     .månedensVine{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        margin-left: 3%;
-    margin-right: 3%;
+        margin-left: 5%;
+    margin-right: 5%;
     gap: 1rem;
     position: relative;
     }
@@ -112,12 +106,12 @@ width: 100%;
         position: relative;
     }
 
-    .månedensVine article:hover{
+    /* .månedensVine article:hover{
         background-image: url(../Img/desktop_img/månedens_vin/hover_vin.svg);
         background-repeat: no-repeat;
         background-size: contain;
         transition-duration: 10s;
-    }
+    } */
    
     .iconMV hr{
         width: 400px;      
@@ -127,6 +121,16 @@ width: 100%;
     background-image: url(../Img/desktop_img/månedens_vin/hero.png);
     min-height: 60vh;
 
+}
+
+.månedensVine img:nth-of-type(1){
+    top: 5%;
+    right:0;
+    width: 30px;
+}
+
+.månedensVine img:nth-of-type(2){
+    width: 50%;
 }
 }
 

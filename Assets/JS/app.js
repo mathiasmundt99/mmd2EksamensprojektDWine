@@ -21,11 +21,13 @@ const baseURL = 'https://api.mastth.dk/wp-json/wp/v2';
 const sectionVin = document.querySelector(".månedensVine");
 const sectionEvents = document.querySelector(".eventsCTA")
 
-//Javascript til at fange vores data fra wordpress apiet til månedens vine
-    fetch(baseURL+`/posts?categories=13&per_page=20`)
+//Javascript til at fange vores data fra wordpress apiet til månedens vine og vinsmagning og events
+function getData(categoryID,specificFunction){     
+fetch(baseURL+`/posts?categories=${categoryID}&per_page=20`)
     .then(res => res.json())
-    .then(data=> renderWinePosts(data))  
+    .then(data=> specificFunction(data))  
     .catch(err => console.log("Error: ",err))
+}
 
 //funktion til at vise dataen til månedens vine som vi har hentet fra apiet
 function renderWinePosts(winePosts){
@@ -51,12 +53,9 @@ winePosts.forEach(winePost =>{
 })
 }
 
+//her udføres funktionen som skal vise månedens vine
+getData(13,renderWinePosts)
 
-//Javascript til at fange vores data fra wordpress apiet til vinsmagning og events
-    fetch(baseURL+`/posts?categories=14&per_page=20`)
-    .then(res => res.json())
-    .then(data=> renderEventPosts(data))  
-    .catch(err => console.log("Error: ",err))
 
  //funktion til at vise dataen til vinsmagning og events som vi har hentet fra apiet
 function renderEventPosts(eventPosts){
@@ -79,21 +78,70 @@ function renderEventPosts(eventPosts){
     })
 }
 
+//her udføres funktionen som skal vise vinsmagning og event CTA posts
+getData(14,renderEventPosts)
 
 
+const eventImg = document.querySelector(".specifikImg")
+const eventIntro = document.querySelector(".specifikIntro")
+const eventTime = document.querySelector(".specifikTime")
+const eventLocation = document.querySelector(".specifikLocation")
+const eventPrice = document.querySelector(".specifikPrice")
+const eventDescription = document.querySelector(".specfikDescription")
+const eventButton = document.querySelector(".specifikButton")
 
-// function getWinePosts(){
-
+// function getUrlParameter(){
+// const Getquery = window.location.search;
+// const Getid = Getquery.split("=")[1];
+// return Getid;
 // }
 
-// function getEventPosts(){
+function getSpecificEvents(Getid, specificFunction){
+    fetch(baseURL+`/posts/${Getid}`)
+    .then(res => res.json())
+    .then(data => {
+        specificFunction(data)
+    })
+    .catch(err => console.log(err))
+}
 
-// }
+function renderID(ids){
+ids.forEach(id =>{
+    const Getid = id.id
+    Getid.href = baseURL+`/posts/${Getid}`
+})
+}
 
-// function renderWinePosts(){
+function renderEvents(event){
+const specifikImg = document.createElement("img")
+const specifikMainTitle = document.createElement("h1")
+const specifikSnackDescription = document.createElement("p")
+const specifikTime = document.createElement("p")
+const specifikLocation = document.createElement("p")
+const specifikPrice = document.createElement("p")
+const specifikDescription = document.createElement("p")
 
-// }
+specifikImg.src = event.acf.image.sizes.medium
+specifikMainTitle.textContent = event.acf.title
+specifikSnackDescription.textContent = event.acf.snack_description
+specifikTime.textContent = event.acf.date
+specifikLocation.textContent = event.acf.location
+specifikPrice.textContent = event.acf.price
+specifikDescription.textContent = event.acf.description
 
-// function rendereEventPosts(){
+eventImg.append(specifikImg)
+eventIntro.append(specifikMainTitle,specifikSnackDescription)
+eventTime.append(specifikTime)
+eventLocation.append(specifikLocation)
+eventPrice.append(specifikPrice)
+eventDescription.append(specifikDescription)
+};
 
-// }
+eventButton.addEventListener("click",function(e){
+    window.location.href = baseURL+`/posts/${id}` 
+});
+
+getSpecificEvents(Getid,renderEvents)
+
+
+

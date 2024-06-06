@@ -1,0 +1,45 @@
+body {
+    background-color: var(--background);
+  }
+
+  .heroSection{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 6rem;
+  }
+
+  .heroSection img {
+    width: 100%;
+  }
+
+  .heroSection .heroText{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .indholdPV {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 2rem;
+  }
+
+  .pvImg img{
+    padding-top: 1.5rem;
+  }
+
+  @media  screen and (min-width: 768px){
+    .indholdPV img{
+      max-width: 100%;
+    }
+  }
+
+  @media  screen and (min-width: 1024px){
+
+    
+
+    
+  }

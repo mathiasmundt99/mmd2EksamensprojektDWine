@@ -105,12 +105,6 @@ function getSpecificEvents(Getid, specificFunction){
     .catch(err => console.log(err))
 }
 
-function renderID(ids){
-ids.forEach(id =>{
-    const Getid = id.id
-    Getid.href = baseURL+`/posts/${Getid}`
-})
-}
 
 function renderEvents(event){
 const specifikImg = document.createElement("img")
@@ -137,8 +131,17 @@ eventPrice.append(specifikPrice)
 eventDescription.append(specifikDescription)
 };
 
+function renderID(ids){
+    ids.forEach(id =>{
+        const Getid = id.id
+        Getid.href = baseURL +`/posts/${ids}`
+    
+        Getid.append = eventButton
+    })
+    }
+
 eventButton.addEventListener("click",function(e){
-    window.location.href = baseURL+`/posts/${id}` 
+    window.location.href = baseURL+`/posts/${ids}` 
 });
 
 getSpecificEvents(Getid,renderEvents)

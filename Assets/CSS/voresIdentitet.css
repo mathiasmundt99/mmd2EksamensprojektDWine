@@ -1,0 +1,56 @@
+.herosectionVoresIdentitet{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.herosectionVoresIdentitet img{
+    width: 100%;
+}
+
+.heroTitleVoresIntitet{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.voresIdentitetMobile{
+    text-align: center;
+}
+.voresdroem{
+    background-color: var(--ultraDarkRed);
+}
+.vinMedPersonlighedSection, .voresDroemContent{
+    padding: 10%;
+}
+.voresIdentitetImages{
+    max-width: 100%;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+}
+.partnersInWineContent{
+    padding: 10%;
+    padding-bottom: 0;
+}
+.partnersInWineCards{
+    background-color: var(--darkRed);
+    padding: 10%;
+    margin: 10%;
+    margin-top: 0;
+}
+.partnersInWineTitle{
+    font-size: 20px;
+    color:#F2F2F2;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+ul{
+    color: #F2F2F2;
+    padding: 0;
+}

@@ -100,10 +100,6 @@ iframe{
     min-height: 60vh;
 }
 
-.heroPI h1{
-    font-size:88px ;
-}
-
 .faciliteter{
     display: flex;
     flex-direction: row;

@@ -97,13 +97,15 @@
     position: relative;
     }
 
-    .månedensVine img:nth-of-type(1){
-        right: -2%;
+    .månedensVine h3{
+        font-size: 20px;
     }
+
 
     .månedensVine article{
         align-self: flex-start;
         position: relative;
+        width: 20vw;
     }
 
     /* .månedensVine article:hover{
@@ -124,8 +126,8 @@
 }
 
 .månedensVine img:nth-of-type(1){
-    top: 5%;
-    right:0;
+    top: 6%;
+    right:-10%;
     width: 30px;
 }
 

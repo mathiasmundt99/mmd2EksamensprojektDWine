@@ -95,8 +95,8 @@ iframe{
 }
 
 @media(min-width: 1024px){
-.heroMV{
-    background-image: url(../Img/desktop_img/månedens_vin/hero.png);
+.heroPI{
+    background-image: url(../Img/desktop_img/praktisk_Information/hero.png);
     min-height: 60vh;
 }
 
@@ -104,6 +104,7 @@ iframe{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 2rem;
     margin-left: 3%;
     margin-right: 3%;
@@ -114,19 +115,40 @@ iframe{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    width: 40vw;
 }
 
 .gavekort{
-    max-width: 60%;
-}
-
-.gavekort{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+   align-items: start;
+   margin-top: 5rem;
+   margin-bottom: 5rem;
 }
 
 .gavekort h3, .gavekort p{
     grid-column: 1/2;
 }
+
+.gavekort h3{
+    text-align: left;
+}
+
+iframe{
+    width: 50vw;
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kontaktPI{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    margin-top: 3rem;
+}
+
 
 }

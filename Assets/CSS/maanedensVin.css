@@ -1,0 +1,139 @@
+.heroMV{
+    background-image: url(../Img/mobil_img/månedens_vin/hero.png);
+    min-height: 20vh;
+    margin-top: 6rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.heroMV{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introTextMV{
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 2rem;
+}
+
+.iconMV hr{
+    width: 100px;
+    border:none;
+    border-bottom: 1px solid #B2857F;
+    margin-bottom: 1rem;
+}
+
+.iconMV{
+    display: flex;
+}
+.månedensVine{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.månedensVine article{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.månedensVine H3, .månedensVine p{
+    text-align: center;
+}
+
+.månedensVine img:nth-of-type(1){
+    width: 40px;
+    position: absolute;
+    right: 5%;
+    top: 3%;
+}
+
+.månedensVine img:nth-of-type(2){
+  max-width: 40%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.månedensVine article:nth-of-type(4) h3{
+    max-width: 90%;
+    
+}
+
+.månedensVine article:nth-of-type(9) h3{
+    max-width: 50vw;
+    margin-left: 20%;
+}
+
+@media(min-width: 768px){
+    .månedensVine{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 5%;
+    margin-right: 5%;
+    }
+
+    .heroMV{
+        background-image: url(../Img/desktop_img/månedens_vin/hero.png);
+        min-height: 40vh;
+    }
+}
+
+@media(min-width: 1024px){
+
+
+    .månedensVine{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 5%;
+    margin-right: 5%;
+    gap: 1rem;
+    position: relative;
+    }
+
+    .månedensVine h3{
+        font-size: 20px;
+    }
+
+
+    .månedensVine article{
+        align-self: flex-start;
+        position: relative;
+        width: 20vw;
+    }
+
+    /* .månedensVine article:hover{
+        background-image: url(../Img/desktop_img/månedens_vin/hover_vin.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        transition-duration: 10s;
+    } */
+   
+    .iconMV hr{
+        width: 400px;      
+}
+
+.heroMV{
+    background-image: url(../Img/desktop_img/månedens_vin/hero.png);
+    min-height: 60vh;
+
+}
+
+.månedensVine img:nth-of-type(1){
+    top: 6%;
+    right:-10%;
+    width: 30px;
+}
+
+.månedensVine img:nth-of-type(2){
+    width: 50%;
+}
+}
+
+

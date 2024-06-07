@@ -108,23 +108,42 @@ ul{
 /* ---- */
 
 @media screen and (min-width: 768px){
+    .entryPoints{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 1rem;
+        padding: 5%;
+    }
 
    
 }
 
 @media screen and (min-width: 1024px){
+    .voresIdentitetMobile{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
 
 .vinMedPersonlighedSection, .voresDroemContent,
 .partnersInWineContent{
-     padding: 5%;
+     padding: 3%;
 }
 .partnersInWineCards{
     margin: 5%;
+    margin-top: 0;
+
+}
+.partnersInWineCards{
+    padding: 5%;
+}
+.partnersInWineCardsSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .identitetDesktop{
      display: grid;
      grid-template-columns: 1fr 500px;
- }
+}
 
 .identitetH3{
     text-align: start;
@@ -147,6 +166,14 @@ ul{
     text-align: start;
     margin-left: 10%;
 }
+.partnersInWineTitle{
+    font-size: 30px;
+}
+li{
+    font-size: 20px;
+}
+
+
 
 
 

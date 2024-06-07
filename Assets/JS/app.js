@@ -66,14 +66,14 @@ function renderEventPosts(eventPosts){
         const titleEvents = document.createElement("h3")
         const date = document.createElement("p")
         const snackDescription = document.createElement("p")
-        const buttonEventCta = document.createElement("button")
+        const buttonEventCta = document.createElement("div")
     
         imageEvents.src = eventPost.acf.image.sizes.medium
         titleEvents.textContent = eventPost.acf.title
         date.textContent = eventPost.acf.location
         snackDescription.textContent = eventPost.acf.snack_description
-        buttonEventCta.textContent = "Læs mere om eventet"
-    
+        buttonEventCta.innerHTML = "<a href = 'specifikEvent.html?id="+eventPost.id + "'>Læs mere om eventet </a>" 
+        
         articleEvents.append(imageEvents, titleEvents, date, snackDescription, buttonEventCta)
     })
 }
@@ -81,6 +81,12 @@ function renderEventPosts(eventPosts){
 //her udføres funktionen som skal vise vinsmagning og event CTA posts
 getData(14,renderEventPosts)
 
+function getPostIdFromUrl(){
+    const queryString = window.location.search
+    const urlParameter = new URLSearchParams (queryString)
+    const id = urlParameter.get("id")
+    return id;
+}
 
 const eventImg = document.querySelector(".specifikImg")
 const eventIntro = document.querySelector(".specifikIntro")
@@ -88,21 +94,6 @@ const eventTime = document.querySelector(".specifikTime")
 const eventLocation = document.querySelector(".specifikLocation")
 const eventPrice = document.querySelector(".specifikPrice")
 const eventDescription = document.querySelector(".specfikDescription")
-
-function getUrlParameter(){
-const Getquery = window.location.search;
-const Getid = Getquery.split("=")[1];
-return Getid;
-}
-
-function getSpecificEvents(Getid, specificFunction){
-    fetch(baseURL+`/posts/${Getid}`)
-    .then(res => res.json())
-    .then(data => {
-        specificFunction(data)
-    })
-    .catch(err => console.log(err))
-}
 
 
 function renderEvents(event){
@@ -130,21 +121,6 @@ eventPrice.append(specifikPrice)
 eventDescription.append(specifikDescription)
 };
 
-// function renderID(ids){
-//     ids.forEach(id =>{
-//         const Getid = id.id
-//         Getid.href = baseURL +`/posts/${ids}`
-    
-//         Getid.append = buttonEventCta
-//     })
-//     }
-
-buttonEventCta.addEventListener("click",function(){
-    let id = getUrlParameter
-    window.location.href = baseURL+`/posts/${id}` 
-});
-
-getSpecificEvents(id,renderEvents)
 
 
 

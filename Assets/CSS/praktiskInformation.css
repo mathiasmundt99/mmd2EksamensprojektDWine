@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 .heroPI{
     background-image: url(../Img/mobil_img/praktisk_Information/hero.png);
     min-height: 20vh;
@@ -32,6 +36,46 @@
     width: 100%;
     max-width: 80%;
     height: auto;
+}
+
+/* åbningstider */
+.openingsHoursSection{
+    background-image: url(../Img/mobil_img/Forside/åbningstiderBg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex; 
+    justify-content: center;
+    margin-top: 3rem;
+
+}
+.openingHoursBox{
+    border: 5px white solid;
+    padding: 20px 0px 20px 0px;
+    background-color: rgba(0, 0, 0, 0.1);  
+    max-width: 500px;
+    min-width: 350px;
+    width: 100%;
+    margin: 10%;
+}
+.openingHours{
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+th, td{
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text);
+    font-family: "Mulish", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 35px 5px 35px;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .kontaktPI{
@@ -86,11 +130,73 @@ iframe{
     text-align: center;
 }
 
+
+.specifikButton, .eventsBtn{
+    cursor: pointer;
+        color: var(--text);
+        font-size: 16px;
+        border-radius: 5px;
+        padding: 10px 40px;
+        border: 2.5px solid var(--text);
+        background-color: transparent;
+    }
+    
+    .specifikButton:hover, .eventsBtn:hover{
+        background-color: var(--text);
+        color: var(--background);
+    }
+
+/*Progressiv disclosure (entry points)*/
+.entryPoints{
+    background-color: var(--background);
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mainCard{
+    background-color: var(--darkRed);
+}
+.entrypointLine{
+    width: 6rem;
+    background-color: var(--text);
+    margin: 1rem auto;
+}
+.firstSubCard{
+    background-image: url(../Img/mobil_img/focused_Entry_Points/månedens_Vine.png);
+}
+.secondSubCard{
+    background-image: url(../Img/mobil_img/focused_Entry_Points/festlokaler.png);
+}
+.cards{
+    margin-top: 10px;
+    padding: 40px 30px 40px 30px;
+    max-width: 360px;
+    height: 420px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
 @media(min-width: 768px){
     
     .heroPI{
         background-image: url(../Img/desktop_img/praktisk_Information/hero.png);
         min-height: 40vh;
+    }
+
+    .entryPoints{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 1rem;
+        padding: 5%;
+    }
+    .entryTitle{
+        font-size: 20px;
     }
 }
 
@@ -123,6 +229,11 @@ iframe{
    align-items: start;
    margin-top: 5rem;
    margin-bottom: 5rem;
+   gap: 10%;
+}
+
+.gavekortText{
+    width: 40vw;
 }
 
 .gavekort h3, .gavekort p{
@@ -152,3 +263,4 @@ iframe{
 
 
 }
+

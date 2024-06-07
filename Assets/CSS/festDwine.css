@@ -1,0 +1,140 @@
+section {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 2rem;
+  }
+
+.heroSection{
+    width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
+    height: auto;
+    position: relative;
+    margin-top: 6rem;
+  }
+
+  .heroSection img {
+    width: 100%;
+  }
+
+  .heroSection .heroText{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Fest sections */
+
+  .festSection img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .festSection picture{
+    text-align: center;
+    justify-content: center;
+  }
+
+  section:nth-child(5) {
+    background-color: var(--darkRed);
+    /* padding: 2rem; */
+    padding-bottom: 2rem;
+  }
+
+  section:nth-child(7) {
+    background-color: var(--darkRed);
+    /* padding: 2rem; */
+    padding-bottom: 2rem;
+  }
+
+
+  /* Slideshow */
+
+  .slidesImg picture{
+        max-width: 100%;
+        justify-content: center;
+        text-align: center;
+  }
+
+  .slidesImg picture img{
+    max-width: 100%;
+  }
+
+  .slideshowDiv h3{
+    text-align: center;
+  }
+
+  .slideshowDiv{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+
+  .slidesImg{
+    display: none;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  @media  screen and (min-width: 768px){
+
+  }
+
+
+  @media  screen and (min-width: 1024px){
+   
+  }
+
+  

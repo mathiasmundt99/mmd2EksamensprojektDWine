@@ -1,0 +1,81 @@
+.heroVE{
+    background-image: url(../Img/mobil_img/vinsmagning_Og_Events/hero.png);
+    min-height: 20vh;
+    margin-top: 6rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.introTextVE{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.iconVE hr{
+    width: 100px;
+    border:none;
+    border-bottom: 1px solid #B2857F;
+    margin-bottom: 1rem;
+}
+
+.iconVE{
+    display: flex;
+}
+
+.eventsCTA{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+}
+
+.eventsCTA article{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: 6rem;
+}
+
+.eventsCTA img{
+    max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.eventsCTA p:nth-of-type(1){
+    margin-top: -1rem;
+}
+
+@media(min-width: 768px){
+    .eventsCTA{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 5%;
+    margin-right: 5%;
+    gap: 2rem;
+    justify-items: center;
+    }
+
+    .heroMV{
+        background-image: url(../Img/desktop_img/vinsmagning_Og_Events/hero.png);
+        min-height: 40vh;
+    }
+
+    .eventsCTA article{
+        align-self: flex-start;
+        width: 30vw;
+    }
+
+   
+   
+}
+
+@media(min-width: 1024px){
+    
+}

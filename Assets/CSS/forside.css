@@ -78,16 +78,7 @@ hr{
     display: flex;
     align-items: center;
 }
-/* åbningstider */
-/* .openingsHoursSection{
-    background-image: url(../Img/mobil_img/Forside/åbningstiderBg.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex; 
-    justify-content: center;
 
-} */
 .openingsHoursSection{
     position: relative;
     width: 100%;
@@ -256,12 +247,11 @@ table{
         height: 90vh;
     }
 
-    .btnFont{
+    .gradientBtn{
         font-size: 20px;
     }
     th, td{
         font-size: 20px;
-        /* padding: 1rem 4rem 1rem 4rem; */
     }
 
     .openingHoursBox{

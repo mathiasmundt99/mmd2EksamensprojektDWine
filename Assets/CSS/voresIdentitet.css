@@ -90,6 +90,7 @@ ul{
     justify-content: center;
 }
 .eventsBtn{
+    font-family: "Mulish", sans-serif;
     cursor: pointer;
     color: #F2F2F2;
     font-size: 16px;
@@ -98,6 +99,7 @@ ul{
     border: 2.5px solid #F2F2F2;
     margin: 1rem;
     background-color: transparent;
+    display: inline-block;
 }
 .eventsBtn:hover{
     background-color: #F2F2F2;

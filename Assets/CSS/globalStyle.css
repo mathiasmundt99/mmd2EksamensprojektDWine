@@ -87,11 +87,10 @@ body{
     margin: 0;
     padding: 0;
     line-height: 1.5;
+    background-color: var(--background); 
 
 }
 
-    background-color: var(--background); 
-  }
   
   /* link styling */
   a:link {

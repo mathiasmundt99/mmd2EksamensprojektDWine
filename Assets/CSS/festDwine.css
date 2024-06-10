@@ -112,7 +112,7 @@ section {
     max-width: 100%;
 }
 
-.slideshowDiv h3 {
+.slideshow h3 {
     text-align: center;
 }
 
@@ -196,12 +196,15 @@ section {
 
   /* Slideshow */
 
-  .activeSlide {
-    display: grid;
+.slideshowDiv{
+  display: grid;
     grid-template-columns: repeat(3, 1fr); /* Display three columns */
     gap: 10px; /* Add gap between columns */
 }
 
+.dot{
+  display: none;
+}
   }
 
   

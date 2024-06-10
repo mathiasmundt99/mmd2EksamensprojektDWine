@@ -57,12 +57,15 @@ function showSlides() {
     // Her kontrolleres skærmstørrelsen, og hvis den er 1024 eller over
     // så skal der istedet vises 3 slides, ellers sættes maxSlides til 1
     let maxSlides = (window.innerWidth >= 1024) ? 3 : 1;
+    // Her sættes slide til display = block, baseret på slideIndex
     for (i = 0; i < maxSlides; i++) {
-        if (slides[slideIndex + i - 1]) {
-            slides[slideIndex + i - 1].style.display = "block";
-        }
-    }
-
+      let slideToShow = slideIndex + i - 1;
+      if (slideToShow >= slides.length) {
+          slideToShow -= slides.length; // Wrap around to the beginning
+      }
+      slides[slideToShow].style.display = "block";
+  }
+    // Her sættes dots igen til active baseret på slideIndex
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 3500);
 }

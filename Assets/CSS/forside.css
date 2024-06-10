@@ -1,23 +1,26 @@
 
 /*------- forside -------*/
 
+.heroSectionForside{
+    width: 100%;
+    min-height: 20vh;
+    position: relative;
+    margin-top: 6rem;
+    }
+.heroSectionForside img {
+    width: 100%;
+    display: block;
+    }
 
-.homeHeroImage{
-    background-image: url(../Img/mobil_img/Forside/hero1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 30rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.homeHeroText{
+.heroTekstForside{
     text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .homeH1{
     font-size: 48px;
-    margin: 0;
 }
 
 .aboutDwineBar{
@@ -76,7 +79,7 @@ hr{
     align-items: center;
 }
 /* åbningstider */
-.openingsHoursSection{
+/* .openingsHoursSection{
     background-image: url(../Img/mobil_img/Forside/åbningstiderBg.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -84,18 +87,32 @@ hr{
     display: flex; 
     justify-content: center;
 
+} */
+.openingsHoursSection{
+    position: relative;
+    width: 100%;
 }
+.openingsHoursSection img{
+    width: 100%;
+    display: block;
+}
+
 .openingHoursBox{
     border: 5px white solid;
-    padding: 20px 0px 20px 0px;
+    /* padding: 20px 0px 40px 0px; */
     background-color: rgba(0, 0, 0, 0.1);  
     max-width: 500px;
     min-width: 350px;
-    width: 100%;
-    margin: 10%;
+    width: 70%;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
 }
 .openingHours{
-    margin-bottom: 20px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
@@ -112,6 +129,7 @@ th, td{
 table{
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
 }
 
 /*Progressiv disclosure (entry points)*/
@@ -223,6 +241,9 @@ table{
 .entryTitle{
     font-size: 20px;
 }
+.entryContent{
+    font-size: 16px;
+}
 
 }
 
@@ -240,15 +261,19 @@ table{
     }
     th, td{
         font-size: 20px;
-        padding: 10px 100px 10px 100px;
+        /* padding: 1rem 4rem 1rem 4rem; */
     }
+
     .openingHoursBox{
-        max-width: 750px;
-        padding: 3rem;
+        max-width: 40%;
+    
     }
     .threeReasonIconDesktop{
         width: 100px;
         height: 100px;
+    }
+    .homeH1{
+        font-size: 60px;
     }
 }
 /* --------------------- */

@@ -5,41 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../Assets/CSS/globalStyle.css" />
-    <link rel="stylesheet" href="../Assets/CSS/forside.css">
+    <link rel="stylesheet" href="../Assets/CSS/forside.css" />
     <script src="../Assets/JS/app.js" defer></script>
   </head>
   <body>
     <header>
-      <section class="homeHeroImage">
-        <div class="homeHeroText">
-          <h1 class="homeH1">D'Wine Bar</h1>
-          <h2>Hele Aalborgs vinbar</h2>
+      <nav class="navbar">
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="../assets/img/desktop_img/forside/logo.png" />
+          <img
+            src="../Assets/Img/mobil_img/header/logo.png"
+            alt="logo"
+            loading="lazy" />
+        </picture>
+        <ul class="navMenu">
+          <li class="navItem"><a href="#" class="navLink">Månedens vine</a></li>
+          <li class="navItem"><a href="#" class="navLink">Menu</a></li>
+          <li class="navItem" style="color: #f2f2f2">
+            Arrangementer↓
+            <ul class="dropDown">
+              <li class="navItem">
+                <a href="#" class="navLink">Vinsmagning og events</a>
+              </li>
+              <li class="navItem">
+                <a href="#" class="navLink">Privat vinsmagning</a>
+              </li>
+            </ul>
+          </li>
+          <li class="navItem">
+            <a href="#" class="navLink">Hold din fest hos os</a>
+          </li>
+          <li class="navItem">
+            <a href="#" class="navLink">Køb vin online</a>
+          </li>
+          <li class="navItem"><a href="#" class="navLink">Gavekort</a></li>
+          <li class="navItem">
+            <a href="#" class="navLink">Vores identitet</a>
+          </li>
+          <li class="navItem"><a href="#" class="navLink">Praktisk info</a></li>
+        </ul>
+        <div class="burgerMenu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-      </section>
+      </nav>
     </header>
     <main>
+      <section class="heroSectionForside">
+          <picture>
+            <source
+              media="(min-width:1024px )"
+              srcset="../Assets/Img/desktop_img/forside/hero1.png"
+            />
+            <source
+              media="(min-width:400px )"
+              srcset="../Assets/Img/mobil_img/Forside/hero1.png"
+            />
+            <img
+              src="../Assets/Img/mobil_img/Forside/hero1.png"
+              alt="Et billede af D'wine Bars indersiden - der ses vinreoler langs væggeene og et vinbord i midten med stole rundt om"
+            />
+          </picture>
+          <div class="heroTekstForside">
+            <h1 class="homeH1">D'Wine Bar</h1>
+            <h2>Hele Aalborgs vinbar</h2>
+          </div>
+      </section>
       <section class="aboutDwineBar">
         <div class="aboutDwineContent">
-        <h3>Kom et smut væk fra hverdagen</h3>
-        <p>
-          Hos D’Wine Bar i Aalborg er vi vilde med god vin og godt værtskab.
-          Spansk vin er vores hjerteblod, men vin fra andre lande er også at
-          finde. Vi har et stort udvalg af vine på glas og lækre cocktails. Følg
-          med her og få nyheder, arrangementer m.v.
-        </p>
-        <p>
-          Vi tager desværre ikke imod bordreservationer. Men er I større selskab
-          er I velkommen til at kontakte os på telefon eller mail - ligeledes
-          hvis I ønsker en vinsmagning.
-        </p>
-        <button class="gradientBtn">
-          <a class="btnFont" href="#">Læs mere om vores bar</a>
-        </button>
+          <h3>Kom et smut væk fra hverdagen</h3>
+          <p>
+            Hos D’Wine Bar i Aalborg er vi vilde med god vin og godt værtskab.
+            Spansk vin er vores hjerteblod, men vin fra andre lande er også at
+            finde. Vi har et stort udvalg af vine på glas og lækre cocktails.
+            Følg med her og få nyheder, arrangementer m.v.
+          </p>
+          <p>
+            Vi tager desværre ikke imod bordreservationer. Men er I større
+            selskab er I velkommen til at kontakte os på telefon eller mail -
+            ligeledes hvis I ønsker en vinsmagning.
+          </p>
+          <button class="gradientBtn">
+            <a class="btnFont" href="#">Læs mere om vores bar</a>
+          </button>
         </div>
         <div class="aboutDwineImagesSection">
           <picture>
-            <img class="aboutDwineImages image1" src="../Assets/Img/desktop_img/forside/billede2.png" alt="To oragne drinks som står lige foran drinkskort">
-            <img class="aboutDwineImages image2" src="../Assets/Img/desktop_img/forside/billede1.png" alt="Dame med orange sommerkjole står og dasner med en mand"> 
+            <img
+              class="aboutDwineImages image1"
+              src="../Assets/Img/desktop_img/forside/billede2.png"
+              alt="To oragne drinks som står lige foran drinkskort"
+            />
+            <img
+              class="aboutDwineImages image2"
+              src="../Assets/Img/desktop_img/forside/billede1.png"
+              alt="Dame med orange sommerkjole står og dasner med en mand"
+            />
           </picture>
         </div>
       </section>
@@ -47,7 +111,8 @@
         <h3>3 grunde til at vælge D'Wine Bar</h3>
         <div class="threeReasonIcon">
           <div class="threeIcons">
-            <svg class="threeReasonIconDesktop"
+            <svg
+              class="threeReasonIconDesktop"
               xmlns="http://www.w3.org/2000/svg"
               width="45.18"
               height="59.225"
@@ -168,7 +233,8 @@
             <p>Casual stemning - kom som du er</p>
           </div>
           <div class="threeIcons">
-            <svg class="threeReasonIconDesktop"
+            <svg
+              class="threeReasonIconDesktop"
               xmlns="http://www.w3.org/2000/svg"
               width="31.936"
               height="67.847"
@@ -250,7 +316,8 @@
             <p>Vin der får dig til at danse salsa</p>
           </div>
           <div class="threeIcons">
-            <svg class="threeReasonIconDesktop"
+            <svg
+              class="threeReasonIconDesktop"
               xmlns="http://www.w3.org/2000/svg"
               width="71.25"
               height="54.164"
@@ -610,11 +677,26 @@
           </div>
           <hr />
         </div>
+        
         <button class="gradientBtn">
           <a class="btnFont" href="#">Se alle månedens vine</a>
         </button>
       </section>
       <section class="openingsHoursSection">
+        <picture>
+            <source
+              media="(min-width:1024px )"
+              srcset="../Assets/Img/desktop_img/forside/åbningstiderBg_desktop.png"
+            />
+            <source
+              media="(min-width:400px )"
+              srcset="../Assets/Img/mobil_img/Forside/ÅbningstiderBg.png"
+            />
+            <img
+              src="../Assets/Img/mobil_img/Forside/ÅbningstiderBg.png"
+              alt="Billede af D'Wine Bars bygning i sort-hvidt"
+            />
+          </picture>
         <div class="openingHoursBox">
           <h3 class="openingHours">Åbningstider</h3>
           <table>
@@ -658,32 +740,105 @@
               Følg med her og se vores kommende arrangementer. Vi afholder
               løbende vinsmagninger har livemusik og andre sjove påfund.
             </p>
-            <p>Følg med her, og se hvad der sker på D'Wine Bar.</p>
-            <button class="eventsBtn whiteBtn"><a href="#"></a>Se alle events</button>
+            <p class="entryContent">Følg med her, og se hvad der sker på D'Wine Bar.</p>
+            <button class="eventsBtn whiteBtn">
+              <a href="vinsmagningOgEvents.html"></a>Se alle events
+            </button>
           </div>
         </div>
         <div class="firstSubCard cards">
           <div class="cardContent">
-            <h3>Quiz-aften og vinsmagning</h3>
-            <p>
+            <h3 class="entryTitle">Quiz-aften og vinsmagning</h3>
+            <p class="entryContent">
               Quiz-aftener er noget af det sjoveste, synes vi. Derfor kombinerer
               vi en vinsmagning med en quiz
             </p>
-            <button class="eventsBtn whiteBtn"><a href="#"></a>Se alle events</button>
+            <button class="eventsBtn whiteBtn">
+              <a href="#"></a>Se eventet
+            </button>
           </div>
         </div>
         <div class="secondSubCard cards">
           <div class="cardContent">
-            <h3>Quiz-aften og vinsmagning</h3>
-            <p>
+            <h3 class="entryTitle">Quiz-aften og vinsmagning</h3>
+            <p class="entryContent">
               Quiz-aftener er noget af det sjoveste, synes vi. Derfor kombinerer
               vi en vinsmagning med en quiz
             </p>
-            <button class="eventsBtn whiteBtn"><a href="#"></a>Se alle events</button>
+            <button class="eventsBtn whiteBtn">
+              <a href="#"></a>Se eventet
+            </button>
           </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <section class="kontakt">
+        <h3>Kontakt os</h3>
+        <article class="kontaktIcons"></article>
+        <article class="mail">
+          <img
+            src="../Assets/Img/mobil_img/footer/ikon_mail.svg"
+            alt="Mail ikon" />
+          <p><a href="mailto:vinbar@d-wine.dk">vinbar@d-wine.dk</a></p>
+        </article>
+        <article class="mobile">
+          <img
+            src="../Assets/Img/mobil_img/footer/ikon_mobil.svg"
+            alt="Mobil ikon" />
+          <p><a href="tel:+4541401231">+45 41 40 12 31</a></p>
+        </article>
+        <article class="location">
+          <img
+            src="../Assets/Img/mobil_img/footer/ikon_lokation.svg "
+            alt="Lokation ikon" />
+          <p>
+            <a
+              href="https://www.google.com/maps/place/Algade+54B,+9000+Aalborg/@57.0486302,9.9142743,16z/data=!3m1!4b1!4m6!3m5!1s0x4649328b448dc4ef:0xa3af8a8ce57e2d01!8m2!3d57.0486273!4d9.9168492!16s%2Fg%2F11pw1yxy7l?entry=ttu"
+              target="_blank"
+              >Algade 54B, 9000 Aalborg</a
+            >
+          </p>
+        </article>
+      </section>
+      <section class="socials">
+        <h3>Følg os på vores sociale medier</h3>
+        <div class="socialIcons">
+          <a href="https://www.instagram.com/dwine_bar/" target="_blank"
+            ><img
+              src="../Assets/Img/mobil_img/footer/ikon_instagram.svg"
+              alt="Instagram ikon"
+          /></a>
+          <a href="https://www.facebook.com/dwinebar" target="_blank"
+            ><img
+              src="../Assets/Img/mobil_img/footer/ikon_facebook.svg"
+              alt="facebook ikon"
+          /></a>
+        </div>
+      </section>
+      <section class="aabningstiderSection">
+        <h3>Åbningstider</h3>
+        <article class="aabningstider">
+          <div class="ugedage">
+            <p>Mandag</p>
+            <p>Tirsdag</p>
+            <p>Onsdag</p>
+            <p>Torsdag</p>
+            <p>Fredag</p>
+            <p>Lørdag</p>
+            <p>Søndag</p>
+          </div>
+          <div class="tidspukt">
+            <p>Lukket</p>
+            <p>16:00 - 23:00</p>
+            <p>16:00 - 23:00</p>
+            <p>16:00 - 23:00</p>
+            <p>14:30 - 02:00</p>
+            <p>14:30 - 02:00</p>
+            <p>Lukket</p>
+          </div>
+        </article>
+      </section>
+    </footer>
   </body>
 </html>

@@ -8,6 +8,19 @@ section {
     margin-bottom: 2rem;
   }
   
+  /* Ikon */
+
+  .iconMV hr{
+    width: 100px;
+    border:none;
+    border-bottom: 1px solid #B2857F;
+    margin-bottom: 1rem;
+  }
+
+  .iconMV{
+    display: flex;
+  }
+
   article{
     padding: 0.5rem;
   }
@@ -45,8 +58,8 @@ section {
   .foodItem{
     padding: 1rem;
   }
+
   @media  screen and (min-width: 768px){
-    
 
     /* Nav */
     .localNav{
@@ -61,7 +74,7 @@ section {
     }
   
   .localNav a {
-      font-size: 25px;
+      font-size: 22px;
       text-decoration: none;
       color: #F2F2F2;
       margin: 5%;
@@ -87,7 +100,7 @@ section {
   .foodItem img {
     width: 100%; 
     max-width: 100%; 
-}
+  }
 
   }
 
@@ -97,6 +110,11 @@ section {
       padding-right: 5%;
       margin-bottom: 2rem;
     }
+
+   /* Ikon */ 
+    .iconMV hr{
+      width: 400px;      
+  }
 
       /* Nav */
     .localNav{
@@ -116,6 +134,24 @@ section {
         color: #F2F2F2;
         margin: 5%;
       }
+
+      .localNav a:hover {
+        text-decoration: underline;
+        /* font-weight: bold; */
+      }
+
+      /* Ikon */
+      .iconMV hr{
+        width: 100px;
+        border:none;
+        border-bottom: 1px solid #B2857F;
+        margin-bottom: 1rem;
+    }
+    
+    .iconMV{
+        display: flex;
+    }
+
 
       /* Start articles setup */
   .introSection {
@@ -165,5 +201,5 @@ section {
   .foodItem img {
     width: 100%; 
     max-width: 100%; 
-} 
-  }
+  } 
+}

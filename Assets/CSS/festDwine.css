@@ -27,6 +27,11 @@ section {
 
   /* Fest sections */
 
+  .festSection{
+    padding-top: 2rem;
+    text-align: center;
+  }
+
   .festSection img {
     max-width: 100%;
     height: auto;
@@ -48,6 +53,27 @@ section {
     padding-bottom: 2rem;
   }
 
+
+  /* Ikon */
+
+  .iconMV{
+    background-color: var(--darkRed);
+  }
+
+  .iconMV hr{
+    width: 100px;
+    border:none;
+    border-bottom: 1px solid #B2857F;
+    margin-bottom: 1rem;
+}
+
+  .iconMV{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
 
   /* Slideshow */
 
@@ -166,13 +192,16 @@ section {
 
 
   @media  screen and (min-width: 768px){
-
+     /* Det ser fint ud på tablet her */
   }
 
 
   @media  screen and (min-width: 1024px){
 
     /* festSection */
+    .festSection{
+      text-align: left;
+    }
 
     .gridDiv{
       display: grid;

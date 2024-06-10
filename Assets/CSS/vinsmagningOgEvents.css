@@ -52,6 +52,22 @@
     margin-top: -1rem;
 }
 
+main div{
+    cursor: pointer;
+    color: var(--text);
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 40px;
+    border: 2.5px solid var(--text);
+    margin: 1rem;
+    background-color: transparent;
+}
+
+main div:hover{
+    background-color: var(--text);
+    color: var(--background);
+}
+
 @media(min-width: 768px){
     .eventsCTA{
         display: grid;
@@ -62,7 +78,7 @@
     justify-items: center;
     }
 
-    .heroMV{
+    .heroVE{
         background-image: url(../Img/desktop_img/vinsmagning_Og_Events/hero.png);
         min-height: 40vh;
     }
@@ -77,5 +93,8 @@
 }
 
 @media(min-width: 1024px){
-    
+    .heroVE{
+        background-image: url(../Img/desktop_img/vinsmagning_Og_Events/hero.png);
+        min-height: 60vh;
+    }
 }

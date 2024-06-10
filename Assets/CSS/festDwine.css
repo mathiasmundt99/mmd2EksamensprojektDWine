@@ -40,13 +40,11 @@ section {
 
   section:nth-child(5) {
     background-color: var(--darkRed);
-    /* padding: 2rem; */
     padding-bottom: 2rem;
   }
 
   section:nth-child(7) {
     background-color: var(--darkRed);
-    /* padding: 2rem; */
     padding-bottom: 2rem;
   }
 
@@ -68,7 +66,7 @@ section {
   }
 
   .slideshowDiv{
-    max-width: 1000px;
+    max-width: 90%;
     position: relative;
     margin: auto;
   }
@@ -79,34 +77,10 @@ section {
     text-align: center;
   }
 
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
-
   .dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 10px;
+    width: 10px;
     margin: 0 2px;
     background-color: #bbb;
     border-radius: 50%;
@@ -134,6 +108,8 @@ section {
 
 
   @media  screen and (min-width: 1024px){
+
+    
    
   }
 

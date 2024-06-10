@@ -15,6 +15,7 @@
   <body>
     <header>
       <nav class="navbar">
+        <a href="../HTML/index.html"></a>
         <picture>
           <source
             media="(min-width: 1024px)"
@@ -24,6 +25,7 @@
             alt="logo"
             loading="lazy" />
         </picture>
+      </a>
         <ul class="navMenu">
           <li class="navItem"><a href="#" class="navLink">Månedens vine</a></li>
           <li class="navItem"><a href="#" class="navLink">Menu</a></li>
@@ -31,24 +33,36 @@
             Arrangementer↓
             <ul class="dropDown">
               <li class="navItem">
-                <a href="#" class="navLink">Vinsmagning og events</a>
+                <a href="../HTML/vinsmagningOgEvents.html" class="navLink"
+                  >Vinsmagning og events</a
+                >
               </li>
               <li class="navItem">
-                <a href="#" class="navLink">Privat vinsmagning</a>
+                <a href="../HTML/privatVinsmagning.html" class="navLink"
+                  >Privat vinsmagning</a
+                >
               </li>
             </ul>
           </li>
           <li class="navItem">
-            <a href="#" class="navLink">Hold din fest hos os</a>
+            <a href="../HTML/festHosDWine.html" class="navLink"
+              >Hold din fest hos os</a
+            >
           </li>
           <li class="navItem">
-            <a href="#" class="navLink">Køb vin online</a>
+            <a href="https://d-wine.dk/" class="navLink">Køb vin online</a>
           </li>
-          <li class="navItem"><a href="#" class="navLink">Gavekort</a></li>
+          <li class="navItem">
+            <a href="#scroll" class="navLink">Gavekort</a>
+          </li>
           <li class="navItem">
             <a href="#" class="navLink">Vores identitet</a>
           </li>
-          <li class="navItem"><a href="#" class="navLink">Praktisk info</a></li>
+          <li class="navItem">
+            <a href="../HTML/privatVinsmagning.html" class="navLink"
+              >Praktisk info</a
+            >
+          </li>
         </ul>
         <div class="burgerMenu">
           <span class="bar"></span>
@@ -121,6 +135,41 @@
           </picture>
         </article>
       </section>
+      <section class="openingsHoursSection">
+        <div class="openingHoursBox">
+          <h3 class="openingHours">Åbningstider</h3>
+          <table>
+            <tr>
+              <th>Mandag</th>
+              <td>lukket</td>
+            </tr>
+            <tr>
+              <th>Tirsdag</th>
+              <td>16:00 - 23:00</td>
+            </tr>
+            <tr>
+              <th>Onsdag</th>
+              <td>16:00 - 23:00</td>
+            </tr>
+            <tr>
+              <th>Torsdag</th>
+              <td>16:00 - 23:00</td>
+            </tr>
+            <tr>
+              <th>Fredag</th>
+              <td>14:30 - 02:00</td>
+            </tr>
+            <tr>
+              <th>Lørdag</th>
+              <td>14:30 - 02:00</td>
+            </tr>
+            <tr>
+              <th>Søndag</th>
+              <td>lukket</td>
+            </tr>
+          </table>
+        </div>
+      </section>
       <section class="kontaktPI">
         <div class="kontaktMT">
           <h3>Kontakt os</h3>
@@ -164,7 +213,7 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
-      <section class="gavekort">
+      <section class="gavekort" id="scroll">
         <article class="gavekortText">
           <h3>Køb af gavekort til baren</h3>
           <p>
@@ -184,6 +233,46 @@
             alt="Køb af gavekort"
             loading="lazy" />
         </picture>
+      </section>
+      <section class="entryPoints">
+        <div class="mainCard cards">
+          <div class="cardContent">
+            <hr class="entrypointLine" />
+            <h3 class="entryTitle">Kommende events</h3>
+            <p class="entryContent">
+              Følg med her og se vores kommende arrangementer. Vi afholder
+              løbende vinsmagninger har livemusik og andre sjove påfund.
+            </p>
+            <p>Følg med her, og se hvad der sker på D'Wine Bar.</p>
+            <button class="eventsBtn whiteBtn">
+              <a href="../HTML/vinsmagningOgEvents.html"></a>Se alle events
+            </button>
+          </div>
+        </div>
+        <div class="firstSubCard cards">
+          <div class="cardContent">
+            <h3>Månedens vine</h3>
+            <p>
+              Hver måned udvælger vi nye og spændene vine på glas. Der er helt
+              sikkert noget til din smag
+            </p>
+            <button class="eventsBtn whiteBtn">
+              <a href="../HTML/menuFood.html"></a>Se månedens vine
+            </button>
+          </div>
+        </div>
+        <div class="secondSubCard cards">
+          <div class="cardContent">
+            <h3>Hold din fest hos os</h3>
+            <p>
+              Hvis du har festen, så har vi lokalerne. Vi arrangere festen med
+              det hele, så du ikke behøves at bekymre dig om noget
+            </p>
+            <button class="eventsBtn whiteBtn">
+              <a href="../HTML/maanedensVin.html"></a>Få mere info
+            </button>
+          </div>
+        </div>
       </section>
     </main>
     <footer>

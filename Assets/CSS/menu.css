@@ -74,7 +74,7 @@ section {
     }
   
   .localNav a {
-      font-size: 25px;
+      font-size: 22px;
       text-decoration: none;
       color: #F2F2F2;
       margin: 5%;
@@ -133,6 +133,11 @@ section {
         text-decoration: none;
         color: #F2F2F2;
         margin: 5%;
+      }
+
+      .localNav a:hover {
+        text-decoration: underline;
+        /* font-weight: bold; */
       }
 
       /* Ikon */

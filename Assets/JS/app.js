@@ -63,7 +63,7 @@ function renderWinePosts(winePosts) {
         label.src = winePost.acf.origin;
         image.src = winePost.acf.image.sizes.large;
         description.textContent = winePost.acf.description;
-        price.textContent = "Pris pr. glas: " + winePost.acf.price;
+        price.textContent = "Pris pr. glas: " + winePost.acf.price + " kr.";
         buttonMV.innerHTML = `<a href="${winePostsLinks[linkIndex]}" target="_blank">Læs mere om vinen</a>`;
 
         articleEl.append(title, label, image, description, price, buttonMV);

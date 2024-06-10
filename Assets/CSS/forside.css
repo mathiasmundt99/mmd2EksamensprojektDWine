@@ -35,6 +35,7 @@ a{
     color: var(--text);
 }
 .gradientBtn{
+    font-family: "Mulish", sans-serif;
     background:linear-gradient(var(--background), var(--background)) padding-box,
     linear-gradient(#D97264, #F25D6A) border-box;
     color: var(--text);
@@ -42,8 +43,10 @@ a{
     border-radius: 5px;
     padding: 10px 40px;
     border: 2.5px solid transparent;
+    display: inline-block;
     margin-top: 1rem;
     cursor: pointer;
+    
 }
 .gradientBtn:hover{
     background-image: linear-gradient(to right,#f18475 0%, #F25D6A 20%, #e96b5a 90%, #ff7e6d 100%);
@@ -160,6 +163,7 @@ table{
 }
 /* white button */
 .eventsBtn{
+    font-family: "Mulish", sans-serif;
     cursor: pointer;
     color: var(--text);
     font-size: 16px;
@@ -168,6 +172,7 @@ table{
     border: 2.5px solid var(--text);
     margin: 1rem;
     background-color: transparent;
+    display: inline-block;
 }
 
 .eventsBtn:hover{

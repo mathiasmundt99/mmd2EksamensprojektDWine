@@ -49,6 +49,6 @@ function getHomePageData(categoryID,specificFunction){
             });
         }
 
-        renderForsideWinePosts(13,renderForsideWinePosts)
+        getHomePageData(13,renderForsideWinePosts)
 
  

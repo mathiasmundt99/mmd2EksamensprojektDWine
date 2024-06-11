@@ -3,43 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Se D'Wine Bars udvalg af delikate snacks og andre tilbehører. Udforsk vores menu her ">
-    <title>Menu for mad - D'wine Bar</title>
+    <meta
+      name="description"
+      content="Se D'Wine Bars udvalg af delikate snacks og andre tilbehører. Udforsk vores menu her "
+    />
+    <title>D'wine Bar - Menu for mad</title>
     <link rel="stylesheet" href="../Assets/CSS/globalStyle.css" />
     <link rel="stylesheet" href="../Assets/CSS/menu.css" />
     <script src="../Assets/JS/app.js" defer></script>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../Assets/Img/desktop_img/forside/logo.png"
+    />
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <a href="index.html"
-          ><img src="../Assets/Img/mobil_img/header/logo.png" alt="Logo"
-        /></a>
+        <a href="../HTML/forside.html">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="../assets/img/desktop_img/forside/logo.png"
+            />
+            <img
+              src="../Assets/Img/mobil_img/header/logo.png"
+              alt="logo"
+              loading="lazy"
+            />
+          </picture>
+        </a>
         <ul class="navMenu">
-          <li class="navItem"><a href="#" class="navLink">Månedens vine</a></li>
-          <li class="navItem"><a href="#" class="navLink">Menu</a></li>
-          <li class="navItem" style="color: #f2f2f2">
+          <li class="navItem">
+            <a href="../HTML/maanedensVin.html" class="navLink"
+              >Månedens vine</a
+            >
+          </li>
+          <li class="navItem">
+            <a href="../HTML/menuFood.html" class="navLink">Menu</a>
+          </li>
+          <li class="navItem" id="navArrangementer" style="color: #f2f2f2">
             Arrangementer↓
             <ul class="dropDown">
               <li class="navItem">
-                <a href="#" class="navLink">Vinsmagning og events</a>
+                <a href="../HTML/vinsmagningOgEvents.html" class="navLink"
+                  >Vinsmagning og events</a
+                >
               </li>
               <li class="navItem">
-                <a href="#" class="navLink">Privat vinsmagning</a>
+                <a href="../HTML/privatVinsmagning.html" class="navLink"
+                  >Privat vinsmagning</a
+                >
               </li>
             </ul>
           </li>
           <li class="navItem">
-            <a href="#" class="navLink">Hold din fest hos os</a>
+            <a href="../HTML/festHosDWine.html" class="navLink"
+              >Hold din fest hos os</a
+            >
           </li>
           <li class="navItem">
-            <a href="#" class="navLink">Køb vin online</a>
+            <a href="https://d-wine.dk/" target="_blank" class="navLink"
+              >Køb vin online</a
+            >
           </li>
-          <li class="navItem"><a href="#" class="navLink">Gavekort</a></li>
           <li class="navItem">
-            <a href="#" class="navLink">Vores identitet</a>
+            <a href="#scroll" class="navLink">Gavekort</a>
           </li>
-          <li class="navItem"><a href="#" class="navLink">Praktisk info</a></li>
+          <li class="navItem">
+            <a href="../HTML/VoresIdentitet.html" class="navLink"
+              >Vores identitet</a
+            >
+          </li>
+          <li class="navItem">
+            <a href="../HTML/praktiskInformation.html" class="navLink"
+              >Praktisk info</a
+            >
+          </li>
         </ul>
         <div class="burgerMenu">
           <span class="bar"></span>
@@ -64,11 +104,15 @@
           <picture>
             <source
               media="(min-width: 1024px)"
-              srcset="../Assets/Img/desktop_img/menu_Lidt_Godt_At_Spise/ikon1.svg" />
+              srcset="
+                ../Assets/Img/desktop_img/menu_Lidt_Godt_At_Spise/ikon1.svg
+              "
+            />
             <img
               src="../Assets/Img/mobil_img/menu_Lidt_Godt_At_Spise/ikon1.svg"
               alt="Vin ikon"
-              loading="lazy" />
+              loading="lazy"
+            />
           </picture>
           <hr />
         </div>
@@ -81,7 +125,9 @@
               baren hvor du kan se alle de vine vi tilbyder. Hver måned udvælger
               vi dog forskellige vine som vi serverer på glas.
             </p>
-            <!-- <button></button> -->
+            <a class="btnFont gradientBtn" href="maanedensVin.html"
+              >Se alle månedens vine</a
+            >
           </article>
           <article>
             <h2>Taster menu</h2>
@@ -116,19 +162,9 @@
       <section class="allFood">
         <article class="foodItem">
           <picture>
-            <source
-              media="(min-width:1024px )"
-              srcset="../Assets/Img/desktop_img/menu_Lidt_Godt_At_Spise/Charcutteri & Ost til 2.png"
-            />
-            <source
-              media="(min-width: 375px)"
-              srcset="
-                ../Assets/Img/mobil_img/menu_Lidt_Godt_At_Spise/charcutteri_Og_Ost_til_To.png
-              "
-            />
             <img
-              src="../Assets/Img/mobil_img/menu_Lidt_Godt_At_Spise/charcutteri_Og_Ost_til_To.png"
-              alt="Charcutteri & Ost til 2"
+              src="../Assets/Img/desktop_img/menu_Lidt_Godt_At_Spise/Charcutteri & Ost til 2.png"
+              alt=""
             />
           </picture>
           <h3 class="title">Charcutteri & Ost til 2</h3>
@@ -140,9 +176,10 @@
         </article>
         <article class="foodItem">
           <picture>
-            <source media="(min-width:1024px )" srcset="../Assets/Img/desktop_img/menu_Lidt_Godt_At_Spise/Panini.png">
-            <source media="(min-width: 375px)" srcset="../Assets/Img/mobil_img/menu_Lidt_Godt_At_Spise/Panini.png">
-            <img src="../Assets/Img/mobil_img/menu_Lidt_Godt_At_Spise/Panini.png" alt="Panini">
+            <img
+              src="../Assets/Img/desktop_img/menu_Lidt_Godt_At_Spise/Panini.png"
+              alt=""
+            />
           </picture>
           <h3 class="title">Panini</h3>
           <p>
@@ -153,10 +190,11 @@
         </article>
         <article class="foodItem">
           <picture>
-            <source media="(min-width:1024px )" srcset="../Assets/Img/desktop_img/menu_Lidt_Godt_At_Spise/Spanske oliven.png">
-            <source media="(min-width: 375px)" srcset="../Assets/Img/mobil_img/menu_Lidt_Godt_At_Spise/Spanske oliven.png">
-            <img src="../Assets/Img/mobil_img/menu_Lidt_Godt_At_Spise/Spanske oliven.png" alt="Spanske oliven">
-            </picture>
+            <img
+              src="../Assets/Img/desktop_img/menu_Lidt_Godt_At_Spise/Spanske oliven.png"
+              alt=""
+            />
+          </picture>
           <h3 class="title">Spansk oliven</h3>
           <p>
             Spanske grønne oliven med sten. Sælges også ud af huset for 18 kr
@@ -166,41 +204,85 @@
         </article>
         <article class="foodItem">
           <picture>
-            <source media="(min-width:1024px )" srcset="../Assets/Img/desktop_img/menu_Lidt_Godt_At_Spise/Nødder.png">
-            <source media="(min-width: 375px)" srcset="../Assets/Img/mobil_img/menu_Lidt_Godt_At_Spise/Nødder.png">
-            <img src="../Assets/Img/mobil_img/menu_Lidt_Godt_At_Spise/Nødder.png" alt="Noedder">
-            </picture>
+            <source
+              media="(min-width:1024px )"
+              srcset="
+                ../Assets/Img/desktop_img/menu_Lidt_Godt_At_Spise/Nødder.png
+              "
+            />
+            <source
+              media="(min-width: 375px)"
+              srcset="
+                ../Assets/Img/mobil_img/menu_Lidt_Godt_At_Spise/Nødder.png
+              "
+            />
+            <img
+              src="../Assets/Img/mobil_img/menu_Lidt_Godt_At_Spise/Nødder.png"
+              alt="Noedder"
+            />
+          </picture>
           <h3 class="title">Nødder</h3>
           <p>Mais frito og jordnødder</p>
           <p>10,00 Kr</p>
         </article>
         <article class="foodItem">
           <picture>
-            <source media="(min-width:1024px )" srcset="../Assets/Img/desktop_img/menu_Lidt_Godt_At_Spise/Chipskurv.png">
-            <source media="(min-width: 375px)" srcset="../Assets/Img/mobil_img/menu_Lidt_Godt_At_Spise/Chipskurv.png">
-            <img src="../Assets/Img/mobil_img/menu_Lidt_Godt_At_Spise/Chipskurv.png" alt="Chipskurv">
-            </picture>
+            <source
+              media="(min-width:1024px )"
+              srcset="
+                ../Assets/Img/desktop_img/menu_Lidt_Godt_At_Spise/Chipskurv.png
+              "
+            />
+            <source
+              media="(min-width: 375px)"
+              srcset="
+                ../Assets/Img/mobil_img/menu_Lidt_Godt_At_Spise/Chipskurv.png
+              "
+            />
+            <img
+              src="../Assets/Img/mobil_img/menu_Lidt_Godt_At_Spise/Chipskurv.png"
+              alt="Chipskurv"
+            />
+          </picture>
           <h3 class="title">Chipskurv</h3>
           <p>Salte chips</p>
           <p>20,00 Kr</p>
         </article>
         <article class="foodItem">
           <picture>
-            <source media="(min-width:1024px )" srcset="../Assets/Img/desktop_img/menu_Lidt_Godt_At_Spise/Når du elsker ost.png">
-            <source media="(min-width: 375px)" srcset="../Assets/Img/mobil_img/menu_Lidt_Godt_At_Spise/Når du elsker ost.png">
-            <img src="../Assets/Img/mobil_img/menu_Lidt_Godt_At_Spise/Når du elsker ost.png" alt="Ostebord">
-            </picture>
+            <source
+              media="(min-width:1024px )"
+              srcset="../Assets/Img/desktop_img/menu_Lidt_Godt_At_Spise/Når du elsker ost.png"
+            />
+            <source
+              media="(min-width: 375px)"
+              srcset="../Assets/Img/mobil_img/menu_Lidt_Godt_At_Spise/Når du elsker ost.png"
+            />
+            <img
+              src="../Assets/Img/mobil_img/menu_Lidt_Godt_At_Spise/Når du elsker ost.png"
+              alt="Ostebord"
+            />
+          </picture>
           <h3 class="title">Når du elsker Ost</h3>
           <p>Anretning med forskellige oste, oliven, brød og garniture.</p>
           <p>119,00 Kr</p>
         </article>
         <article class="foodItem">
           <picture>
-            <source media="(min-width:1024px )" srcset="../Assets/Img/desktop_img/menu_Lidt_Godt_At_Spise/Chartutteri & ost.png">
-            <source media="(min-width: 375px)" srcset="../Assets/Img/mobil_img/menu_Lidt_Godt_At_Spise/Chartutteri & ost.png">
-            <img src="../Assets/Img/mobil_img/menu_Lidt_Godt_At_Spise/Chartutteri & ost.png" alt="Chartutteri & ost">
-            </picture>
-          
+            <source
+              media="(min-width:1024px )"
+              srcset="../Assets/Img/desktop_img/menu_Lidt_Godt_At_Spise/Chartutteri & ost.png"
+            />
+            <source
+              media="(min-width: 375px)"
+              srcset="../Assets/Img/mobil_img/menu_Lidt_Godt_At_Spise/Chartutteri & ost.png"
+            />
+            <img
+              src="../Assets/Img/mobil_img/menu_Lidt_Godt_At_Spise/Chartutteri & ost.png"
+              alt="Chartutteri & ost"
+            />
+          </picture>
+
           <h3 class="title">Charcutteri & Ost</h3>
           <p>Perfekt til 2 småsultne</p>
           <p>109,00 Kr</p>

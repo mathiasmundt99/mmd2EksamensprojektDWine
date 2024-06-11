@@ -46,9 +46,9 @@ function renderWinePosts(winePosts) {
         label.src = winePost.acf.origin;
         image.src = winePost.acf.image.sizes.large;
         description.textContent = winePost.acf.description;
-        price.textContent = "Pris pr. glas: " + winePost.acf.price + " kr.";
+        price.textContent = "Pris pr. glas: " + winePost.acf.price + ",-";
+        // buttonMV.innerHTML = `<a href="${winePost.acf.link_to_webshop}" target="_blank">Læs mere om vinen</a>`;
         buttonMV.innerHTML = `<a href="${winePost.acf.link_to_webshop}" target="_blank">Læs mere om vinen</a>`;
-
         articleEl.append(title, label, image, description, price, buttonMV);
     });
 }

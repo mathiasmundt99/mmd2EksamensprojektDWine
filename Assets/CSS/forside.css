@@ -34,7 +34,7 @@ a{
     text-decoration: none;
     color: var(--text);
 }
-.gradientBtn{
+/* .gradientBtn{
     font-family: "Mulish", sans-serif;
     background:linear-gradient(var(--background), var(--background)) padding-box,
     linear-gradient(#D97264, #F25D6A) border-box;
@@ -51,7 +51,7 @@ a{
 .gradientBtn:hover{
     background-image: linear-gradient(to right,#f18475 0%, #F25D6A 20%, #e96b5a 90%, #ff7e6d 100%);
     color: white;
-}
+} */
 
 .homeIcon{
     padding:2%;
@@ -261,9 +261,10 @@ table{
         margin-top: 4rem;
     }
 
-    .gradientBtn{
+    /* .gradientBtn{
         font-size: 20px;
-    }
+    } */
+    
     th, td{
         font-size: 20px;
     }

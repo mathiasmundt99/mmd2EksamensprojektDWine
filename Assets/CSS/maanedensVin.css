@@ -17,6 +17,7 @@
     padding-right: 10%;
     margin-bottom: 2rem;
     text-align: center;
+    margin-top: 2rem;
 }
 
 .iconMV hr{
@@ -82,7 +83,7 @@
     width: 55%;
 }
 
-.månedensVine article div{
+.månedensVine article a{
     background:linear-gradient(var(--background), var(--background)) padding-box,
     linear-gradient(#D97264, #F25D6A) border-box;
     color: var(--text);
@@ -95,7 +96,7 @@
     max-width: 250px;
 }
 
-.månedensVine article div:hover{
+.månedensVine article a:hover{
     background-image: linear-gradient(to right,#f18475 0%, #F25D6A 20%, #e96b5a 90%, #ff7e6d 100%);
     color: white; 
 }

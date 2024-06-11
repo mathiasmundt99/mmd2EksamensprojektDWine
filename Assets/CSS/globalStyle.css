@@ -32,6 +32,38 @@ font-size: 16px;
 color: #F2F2F2;
 }
 
+
+/* Knap */
+
+a{
+    font-family: "Mulish", sans-serif;
+    text-decoration: none;
+    color: var(--text);
+}
+.gradientBtn{
+    font-family: "Mulish", sans-serif;
+    background:linear-gradient(var(--background), var(--background)) padding-box,
+    linear-gradient(#D97264, #F25D6A) border-box;
+    color: var(--text);
+    /* font-size: 14px; */
+    border-radius: 5px;
+    padding: 10px 40px;
+    border: 2.5px solid transparent;
+    display: inline-block;
+    margin-top: 1rem;
+    cursor: pointer;
+    
+}
+
+.gradientBtn a{
+    font-size: 14px;
+}
+
+.gradientBtn:hover{
+    background-image: linear-gradient(to right,#f18475 0%, #F25D6A 20%, #e96b5a 90%, #ff7e6d 100%);
+    color: white;
+}
+
 @media(min-width: 1024px){
     h1{
         font-family: "Playfair Display", serif;
@@ -60,6 +92,14 @@ color: #F2F2F2;
         font-size: 20px;
         color: #F2F2F2;
         }
+
+      /* .gradientBtn a{
+        font-size: 60px;
+    } */
+    
+    .btnFont .gradientBtn {
+        font-size: 60px;
+    }
 }
 
 *,
@@ -254,7 +294,9 @@ body{
     .navMenu li:nth-of-type(2){
         margin-bottom: -5rem;
     }
+
   }
+
   
   
   /* footer styling */

@@ -221,10 +221,38 @@ body{
   
       .navMenu.active{
           right: 0;
-          margin: 0;
-          margin-top: 20px;
+          margin-top: 1.5rem;
       }
   
+      .navbar ul li ul.dropDown{
+        display: block;
+    }
+
+    .navMenu{
+        justify-content: start;
+        gap: 20px;
+    }
+
+    .navbar ul li ul.dropDown{
+        width: auto;
+        background-color: var(--ultraDarkRed);
+        position:unset;
+        z-index: 0;
+        padding:0;
+        display:block;
+    }
+
+    .navbar ul li ul.dropDown li{
+        margin-top: 50px;
+    }
+
+   #navArrangementer{
+        color: #4C121E !important;
+    }
+
+    .navMenu li:nth-of-type(2){
+        margin-bottom: -5rem;
+    }
   }
   
   

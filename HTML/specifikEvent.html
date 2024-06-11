@@ -16,21 +16,27 @@
   </head>
   <header>
     <nav class="navbar">
-      <a href="../HTML/index.html"></a>
-      <picture>
-        <source
-          media="(min-width: 1024px)"
-          srcset="../assets/img/desktop_img/forside/logo.png" />
-        <img
-          src="../Assets/Img/mobil_img/header/logo.png"
-          alt="logo"
-          loading="lazy" />
-      </picture>
-    </a>
+      <a href="../HTML/forside.html">
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="../assets/img/desktop_img/forside/logo.png" />
+          <img
+            src="../Assets/Img/mobil_img/header/logo.png"
+            alt="logo"
+            loading="lazy" />
+        </picture>
+      </a>
       <ul class="navMenu">
-        <li class="navItem"><a href="#" class="navLink">Månedens vine</a></li>
-        <li class="navItem"><a href="#" class="navLink">Menu</a></li>
-        <li class="navItem" style="color: #f2f2f2">
+        <li class="navItem">
+          <a href="../HTML/maanedensVin.html" class="navLink"
+            >Månedens vine</a
+          >
+        </li>
+        <li class="navItem">
+          <a href="../HTML/menuFood.html" class="navLink">Menu</a>
+        </li>
+        <li class="navItem" id="navArrangementer" style="color: #f2f2f2">
           Arrangementer↓
           <ul class="dropDown">
             <li class="navItem">
@@ -51,16 +57,20 @@
           >
         </li>
         <li class="navItem">
-          <a href="https://d-wine.dk/" class="navLink">Køb vin online</a>
+          <a href="https://d-wine.dk/" target="_blank" class="navLink"
+            >Køb vin online</a
+          >
         </li>
         <li class="navItem">
           <a href="#scroll" class="navLink">Gavekort</a>
         </li>
         <li class="navItem">
-          <a href="#" class="navLink">Vores identitet</a>
+          <a href="../HTML/VoresIdentitet.html" class="navLink"
+            >Vores identitet</a
+          >
         </li>
         <li class="navItem">
-          <a href="../HTML/privatVinsmagning.html" class="navLink"
+          <a href="../HTML/praktiskInformation.html" class="navLink"
             >Praktisk info</a
           >
         </li>
@@ -88,7 +98,7 @@
             <img src="../Assets/Img/mobil_img/vinsmagning_Og_Events/ikon4.svg" alt="Pris ikon">
         </article>
     </section>
-    <a href=""><button class="specifikButton">Køb billet</button></a>
+    <a href="https://d-wine.dk/vare-kategori/event/" target="_blank"><button class="specifikButton">Køb billet</button></a>
   </div>
     </section>
 </section>

@@ -84,9 +84,14 @@ cursor: pointer;
     .entryTitle{
         font-size: 20px;
     }
+
+    .specfikDescription p{
+        margin-left: 8%;
+        margin-right: 8%;
+    }
 }
 
-@media(min-width: 1024px){
+@media(min-width: 768px){
     .specifikFlex{
         display: flex;
     }

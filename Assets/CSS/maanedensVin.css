@@ -16,10 +16,11 @@
     padding-left: 10%;
     padding-right: 10%;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .iconMV hr{
-    width: 100px;
+    width: 50px;
     border:none;
     border-bottom: 1px solid #B2857F;
     margin-bottom: 1rem;
@@ -31,13 +32,13 @@
 .månedensVine{
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 6rem;
 }
 .månedensVine article{
     display: flex;
-    justify-content: center;
-    align-self: center;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: column;
-    position: relative;
     margin-top: 2rem;
 }
 
@@ -48,12 +49,11 @@
 .månedensVine img:nth-of-type(1){
     width: 40px;
     position: absolute;
-    right: 5%;
-    top: 3%;
+    right: 0;
+    top:5%;
 }
 
 .månedensVine img:nth-of-type(2){
-  max-width: 40%;
   height: auto;
   display: block;
   margin-left: auto;
@@ -68,7 +68,36 @@
 
 .månedensVine article:nth-of-type(9) h3{
     max-width: 50vw;
-    margin-left: 20%;
+}
+
+.månedensVine article:nth-of-type(3) img:nth-of-type(2){
+    width: 32%;
+}
+
+.månedensVine article:nth-of-type(5) img:nth-of-type(2){
+    width: 60%;
+}
+
+.månedensVine article:nth-of-type(12) img:nth-of-type(2){
+    width: 55%;
+}
+
+.månedensVine article div{
+    background:linear-gradient(var(--background), var(--background)) padding-box,
+    linear-gradient(#D97264, #F25D6A) border-box;
+    color: var(--text);
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 10px 40px;
+    border: 2.5px solid transparent;
+    margin-top: 1rem;
+    cursor: pointer;
+    max-width: 250px;
+}
+
+.månedensVine article div:hover{
+    background-image: linear-gradient(to right,#f18475 0%, #F25D6A 20%, #e96b5a 90%, #ff7e6d 100%);
+    color: white; 
 }
 
 @media(min-width: 768px){
@@ -77,11 +106,44 @@
         grid-template-columns: 1fr 1fr;
         margin-left: 5%;
     margin-right: 5%;
+    justify-items: center;
     }
 
     .heroMV{
         background-image: url(../Img/desktop_img/månedens_vin/hero.png);
         min-height: 40vh;
+    }
+
+    .månedensVine article:nth-of-type(5) img:nth-of-type(2){
+        width: 60%;
+    }
+    
+    .månedensVine article:nth-of-type(12) img:nth-of-type(2){
+        width: 55%;
+    }
+    
+    .månedensVine article:nth-of-type(2) p:nth-of-type(1), .månedensVine article:nth-of-type(3) p:nth-of-type(1){
+        margin-bottom: 3rem;
+    }
+    
+    .månedensVine article:nth-of-type(6) p:nth-of-type(1){
+        margin-top: -1px;
+    }
+    
+    .månedensVine article:nth-of-type(7) p:nth-of-type(1), .månedensVine article:nth-of-type(8) p:nth-of-type(1), .månedensVine article:nth-of-type(5) p:nth-of-type(1){
+        margin-top: 2rem;
+    }
+    
+    .månedensVine article:nth-of-type(7) p:nth-of-type(2), .månedensVine article:nth-of-type(8) p:nth-of-type(2), .månedensVine article:nth-of-type(12) p:nth-of-type(2){
+        margin-top: 4.5rem;
+    }
+    
+    .månedensVine article:nth-of-type(10) p:nth-of-type(2), .månedensVine article:nth-of-type(14) p:nth-of-type(2){
+        margin-top: 3.5rem;
+    }
+
+    .månedensVine article{
+        width: 30vw;
     }
 }
 
@@ -94,7 +156,7 @@
         margin-left: 5%;
     margin-right: 5%;
     gap: 1rem;
-    position: relative;
+    justify-items: center;
     }
 
     .månedensVine h3{
@@ -103,17 +165,10 @@
 
 
     .månedensVine article{
-        align-self: flex-start;
+        align-self:baseline;
         position: relative;
-        width: 20vw;
+        width: 80%;
     }
-
-    /* .månedensVine article:hover{
-        background-image: url(../Img/desktop_img/månedens_vin/hover_vin.svg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        transition-duration: 10s;
-    } */
    
     .iconMV hr{
         width: 400px;
@@ -127,14 +182,19 @@
 }
 
 .månedensVine img:nth-of-type(1){
-    top: 6%;
+    top: 20px;
     right:-10%;
     width: 30px;
 }
 
 .månedensVine img:nth-of-type(2){
-    width: 50%;
+    width: 60%;
 }
+.månedensVine img:nth-of-type(2):hover{
+    scale: 110%;
+    transition: 0.5s;
+}
+
 }
 
 

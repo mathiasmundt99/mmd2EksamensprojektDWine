@@ -5,7 +5,7 @@ html {
 .heroPI{
     background-image: url(../Img/mobil_img/praktisk_Information/hero.png);
     min-height: 20vh;
-    margin-top: 6rem;
+    margin-top: 5rem;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -36,6 +36,10 @@ html {
     width: 100%;
     max-width: 80%;
     height: auto;
+}
+
+.kontaktPI .mail, .kontaktPI .mobile{
+    justify-content: center;
 }
 
 /* åbningstider */
@@ -227,7 +231,7 @@ iframe{
 .gavekort{
     display: flex;
    align-items: start;
-   margin-top: 5rem;
+   margin-top: 6rem;
    margin-bottom: 5rem;
    gap: 10%;
 }

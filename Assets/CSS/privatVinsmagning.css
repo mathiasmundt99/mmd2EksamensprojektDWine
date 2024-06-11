@@ -3,7 +3,7 @@
     width: 100%;
     min-height: 20vh;
     position: relative;
-    margin-top: 6rem;
+    margin-top: 5rem;
   }
 
   .heroSection img {
@@ -22,7 +22,9 @@
     padding-left: 10%;
     padding-right: 10%;
     margin-bottom: 2rem;
+
   }
+
 
   .pvImg img{
     padding-top: 1.5rem;
@@ -45,9 +47,13 @@
 
     .heroSection{
       width: 100%;
-      min-height: 60vh;
       position: relative;
       margin-top: 6rem;
+    }
+
+    .indholdPV p{
+      padding-left: 15%;
+      padding-right: 15%;
     }
 
     

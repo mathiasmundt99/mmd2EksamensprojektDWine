@@ -1,7 +1,7 @@
 .heroVE{
     background-image: url(../Img/mobil_img/vinsmagning_Og_Events/hero.png);
     min-height: 20vh;
-    margin-top: 6rem;
+    margin-top: 5rem;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -10,8 +10,10 @@
 }
 
 .introTextVE{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    margin-top: 2rem;
 }
 
 .iconVE hr{
@@ -52,18 +54,18 @@
     margin-top: -1rem;
 }
 
-main div{
+main div a{
     cursor: pointer;
     color: var(--text);
     font-size: 16px;
     border-radius: 5px;
     padding: 10px 40px;
     border: 2.5px solid var(--text);
-    margin: 1rem;
+    margin-top: 10rem;
     background-color: transparent;
 }
 
-main div:hover{
+main div a:hover{
     background-color: var(--text);
     color: var(--background);
 }

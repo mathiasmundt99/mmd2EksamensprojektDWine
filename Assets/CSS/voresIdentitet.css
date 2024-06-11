@@ -2,6 +2,7 @@
     width: 100%;
     height: auto;
     position: relative;
+    margin-top: 5rem;
 }
  
 .herosectionVoresIdentitet img{
@@ -175,7 +176,11 @@ ul{
 .partnersInWineTitle{
     font-size: 30px;
 }
-li{
+.partnersInWineCards li{
     font-size: 20px;
+}
+
+.herosectionVoresIdentitet{
+    margin-top: 5rem;
 }
 }

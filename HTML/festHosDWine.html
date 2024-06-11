@@ -3,237 +3,408 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Planlæg din næste fest hos D'Wine Bar i centrum af Aalborg. Vores unikke lokale med lækre vine gør enhver begivenhed speciel. ">
+    <meta
+      name="description"
+      content="Planlæg din næste fest hos D'Wine Bar i centrum af Aalborg. Vores unikke lokale med lækre vine gør enhver begivenhed speciel. " />
     <title>D'Wine Moments - D'Wine Bar</title>
     <link rel="stylesheet" href="../Assets/CSS/globalStyle.css" />
     <link rel="stylesheet" href="../Assets/CSS/festDwine.css" />
     <script src="../Assets/JS/app.js" defer></script>
     <script src="../Assets/JS/festHosDwine.js" defer></script>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../Assets/Img/desktop_img/forside/logo.png" />
   </head>
   <body>
     <header>
-        <nav class="navbar">
-            <picture>
-              <source
-                media="(min-width: 1024px)"
-                srcset="../assets/img/desktop_img/forside/logo.png" />
-              <img
-                src="../Assets/Img/mobil_img/header/logo.png"
-                alt="logo"
-                loading="lazy" />
-            </picture>
-            <ul class="navMenu">
-              <li class="navItem"><a href="#" class="navLink">Månedens vine</a></li>
-              <li class="navItem"><a href="#" class="navLink">Menu</a></li>
-              <li class="navItem" style="color: #f2f2f2">
-                Arrangementer↓
-                <ul class="dropDown">
-                  <li class="navItem">
-                    <a href="#" class="navLink">Vinsmagning og events</a>
-                  </li>
-                  <li class="navItem">
-                    <a href="#" class="navLink">Privat vinsmagning</a>
-                  </li>
-                </ul>
+      <!-- inspiration taget fra: https://www.youtube.com/watch?v=flItyHiDm7E&t=184s -->
+      <nav class="navbar">
+        <a href="../HTML/index.html">
+          <picture>
+            <source
+              media="(min-width: 1220px)"
+              srcset="../assets/img/desktop_img/forside/logo.png" />
+            <img
+              src="../Assets/Img/mobil_img/header/logo.png"
+              alt="logo"
+              loading="lazy" />
+          </picture>
+        </a>
+        <ul class="navMenu">
+          <li class="navItem">
+            <a href="../HTML/maanedensVin.html" class="navLink"
+              >Månedens vine</a
+            >
+          </li>
+          <li class="navItem">
+            <a href="../HTML/menuFood.html" class="navLink">Menu</a>
+          </li>
+          <li class="navItem" id="navArrangementer" style="color: #f2f2f2">
+            Arrangementer↓
+            <ul class="dropDown">
+              <li class="navItem">
+                <a href="../HTML/vinsmagningOgEvents.html" class="navLink"
+                  >Vinsmagning og events</a
+                >
               </li>
               <li class="navItem">
-                <a href="#" class="navLink">Hold din fest hos os</a>
+                <a href="../HTML/privatVinsmagning.html" class="navLink"
+                  >Privat vinsmagning</a
+                >
               </li>
-              <li class="navItem">
-                <a href="#" class="navLink">Køb vin online</a>
-              </li>
-              <li class="navItem"><a href="#" class="navLink">Gavekort</a></li>
-              <li class="navItem">
-                <a href="#" class="navLink">Vores identitet</a>
-              </li>
-              <li class="navItem"><a href="#" class="navLink">Praktisk info</a></li>
             </ul>
-            <div class="burgerMenu">
-              <span class="bar"></span>
-              <span class="bar"></span>
-              <span class="bar"></span>
-            </div>
-          </nav>
+          </li>
+          <li class="navItem">
+            <a href="../HTML/festHosDWine.html" class="navLink"
+              >Hold din fest hos os</a
+            >
+          </li>
+          <li class="navItem">
+            <a href="https://d-wine.dk/" target="_blank" class="navLink"
+              >Køb vin online</a
+            >
+          </li>
+          <li class="navItem">
+            <a href="praktiskInformation.html" class="navLink">Gavekort</a>
+          </li>
+          <li class="navItem">
+            <a href="../HTML/VoresIdentitet.html" class="navLink"
+              >Vores identitet</a
+            >
+          </li>
+          <li class="navItem">
+            <a href="../HTML/praktiskInformation.html" class="navLink"
+              >Praktisk info</a
+            >
+          </li>
+        </ul>
+        <div class="burgerMenu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
     </header>
     <main>
-        <section class="heroSection">
-            <picture>
-                <source media="(min-width:768px )" srcset="../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/hero.png">
-                <source media="(min-width:375px )" srcset="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/hero.png">
-                <img src="" alt="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/hero.png">
-            </picture>
-            <div class="heroText">
-                <h1>D'Wine Moments</h1>
-            </div>
-        </section>
-        <section>
-            <h2>Lad os stå for din fest!</h2>
-            <p>Hos D’Wine Moments er vi klar til at facilitere din næste fest. Om det er firmafest, netværksarrangementer, julefrokost, fødselsdag, bryllup, konfirmation eller andet kan vi danne rammerne for den perfekte dag. Det er kun fantasien der sætter grænser – lokalet kan også bruges til vinsmagninger og møder – vi har altid ja-hatten på.Vi laver altid totalløsninger, så når vi kontaktes, sørger vi for alt fra drikkevarer, mad, opdækning, til servering og oprydning.
-            Forespørgsler på lokalet sendes til vinbar@d-wine.dk.</p>
-        </section>
-        <section class="iconMV">
+      <section class="heroSection">
+        <picture>
+          <source
+            media="(min-width:768px )"
+            srcset="../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/hero.png" />
+          <source
+            media="(min-width:375px )"
+            srcset="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/hero.png" />
+          <img
+            src=""
+            alt="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/hero.png" />
+        </picture>
+        <div class="heroText">
+          <h1>D'Wine Moments</h1>
+        </div>
+      </section>
+      <section class="introSec">
+        <h2>Lad os stå for din fest!</h2>
+        <p>
+          Hos D’Wine Moments er vi klar til at facilitere din næste fest. Om det
+          er firmafest, netværksarrangementer, julefrokost, fødselsdag, bryllup,
+          konfirmation eller andet kan vi danne rammerne for den perfekte dag.
+          Det er kun fantasien der sætter grænser – lokalet kan også bruges til
+          vinsmagninger og møder – vi har altid ja-hatten på.Vi laver altid
+          totalløsninger, så når vi kontaktes, sørger vi for alt fra
+          drikkevarer, mad, opdækning, til servering og oprydning. Forespørgsler
+          på lokalet sendes til vinbar@d-wine.dk.
+        </p>
+      </section>
+      <section class="iconMV">
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/ikon1.svg" />
+          <img
+            src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/ikon1.svg"
+            alt="ikon"
+            loading="lazy" />
+        </picture>
+        <p>
+          *Alt kan skræddersyes til dine ønsker ift. type af mad og vin mm.
+          Derfor er priserne vejledende, og vil tilpasses til dit behov.
+        </p>
+      </section>
+      <section class="festSection">
+        <div class="gridDiv">
+          <div class="textDiv">
+            <h3>Fest hos D'Wine Moments</h3>
+            <p>
+              Velkomstbobler 3-retters menu og tilpasset vinmenu Vin, øl og vand
+              ad libitum under middag 799,- pr. person Fri bar med vin, øl, vand
+              og drinks indtil 02:00 399,- pr. person Servicegebyr: 50,- pr.
+              person
+            </p>
+            <p>En aften med det hele 1248,- pr. person*</p>
+          </div>
+          <div class="imgDiv">
             <picture>
               <source
-                media="(min-width: 1024px)"
-                srcset="../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/ikon1.svg" />
+                media="(min-width:768px )"
+                srcset="
+                  ../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/fest_hos_dwine.png
+                " />
+              <source
+                media="(min-width: 375px)"
+                srcset="
+                  ../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/fest_Hos_Dwine.png
+                " />
               <img
-                src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/ikon1.svg"
-                alt="ikon"
-                loading="lazy" />
+                src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/fest_Hos_Dwine.png"
+                alt="" />
             </picture>
-            <p>*Alt kan skræddersyes til dine ønsker ift. type af mad og vin mm. Derfor er priserne vejledende, og vil tilpasses til dit behov.</p>
-          </section>
-        <section class="festSection">
-            <div class="gridDiv">
-                <div class="textDiv">
-            <h3>Fest hos D'Wine Moments</h3>
-            <p>Velkomstbobler
-                3-retters menu og tilpasset vinmenu
-                Vin, øl og vand ad libitum under middag
-                799,- pr. person
-                Fri bar med vin, øl, vand og drinks indtil 02:00
-                399,- pr. person
-                Servicegebyr: 50,- pr. person
-                </p>
-                <p>En aften med det hele 1248,- pr. person*</p>
-            </div>
-            <div class="imgDiv">
-                <picture>
-                    <source media="(min-width:768px )" srcset="../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/fest_hos_dwine.png">
-                    <source media="(min-width: 375px)" srcset="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/fest_Hos_Dwine.png">
-                    <img src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/fest_Hos_Dwine.png" alt="">
-                </picture>
-            </div>
+          </div>
         </div>
-        </section>
-        <section class="festSection">
-            <div class="gridDiv">
-                <div class="textDiv">
+      </section>
+      <section class="festSection">
+        <div class="gridDiv">
+          <div class="textDiv">
             <h3>Julefrokost</h3>
-            <p>Udvalgte fredage og lørdage i november og december.
-                Kl. 18:00-02:00
-                Julebuffet fra Hos Isidor Henius eller 
-                3 retters menu fra Applaus
-                Øl, vin, vand, snaps og drinks ad libitum                
-                </p>
-                <p>1299,- pr. person*</p>
-            </div>
-            <div class="imgDiv">
-                <picture>
-                    <source media="(min-width:768px )" srcset="../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/julefrokost.png">
-                    <source media="(min-width: 375px)" srcset="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/julefrokost.png">
-                    <img src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/julefrokost.png" alt="">
-                </picture>
-            </div>
-            </div>
-        </section>
-        <section class="festSection">
-            <div class="gridDiv">
-            <div class="textDiv">
+            <p>
+              Udvalgte fredage og lørdage i november og december. Kl.
+              18:00-02:00 Julebuffet fra Hos Isidor Henius eller  3 retters menu
+              fra Applaus Øl, vin, vand, snaps og drinks ad libitum
+            </p>
+            <p>1299,- pr. person*</p>
+          </div>
+          <div class="imgDiv">
+            <picture>
+              <source
+                media="(min-width:768px )"
+                srcset="
+                  ../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/julefrokost.png
+                " />
+              <source
+                media="(min-width: 375px)"
+                srcset="
+                  ../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/julefrokost.png
+                " />
+              <img
+                src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/julefrokost.png"
+                alt="" />
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="festSection">
+        <div class="gridDiv">
+          <div class="textDiv">
             <h3>Konfirmation</h3>
-            <p>Velkomstbobler og alkoholfrit alternativ
-                3-retters menu
-                Hvidvin, rødvin og dessertvin tilpasset menuen
-                - ad libitum indtil kl. 18
-                Øl, sodavand, saft og vand
-                - ad libitum indtil kl. 18
-                Kaffe & Te                               
-                </p>
-                <p>799,- pr. person*</p>
-            </div>
-            <div class="imgDiv">
-                <picture>
-                    <source media="(min-width:768px )" srcset="../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/konfirmation.png">
-                    <source media="(min-width: 375px)" srcset="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/konfirmation.png">
-                    <img src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/konfirmation.png" alt="">
-                </picture>
-            </div>
-            </div>    
-        </section>
-        <section class="slideshow">
-            <h3>Se flere billeder af lokalerne</h3>
-            <div class="slideshowDiv">
-
-        <div class="slidesImg">
+            <p>
+              Velkomstbobler og alkoholfrit alternativ 3-retters menu Hvidvin,
+              rødvin og dessertvin tilpasset menuen - ad libitum indtil kl. 18
+              Øl, sodavand, saft og vand - ad libitum indtil kl. 18 Kaffe & Te
+            </p>
+            <p>799,- pr. person*</p>
+          </div>
+          <div class="imgDiv">
             <picture>
-                <source media="(min-width: 768px)" srcset="../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/slideshow1.png">
-                <source media="(min-width: 375px)" srcset="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow1.png">
-                <img src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow1.png" alt="">
+              <source
+                media="(min-width:768px )"
+                srcset="
+                  ../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/konfirmation.png
+                " />
+              <source
+                media="(min-width: 375px)"
+                srcset="
+                  ../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/konfirmation.png
+                " />
+              <img
+                src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/konfirmation.png"
+                alt="" />
             </picture>
+          </div>
         </div>
-
-        <div class="slidesImg">
+      </section>
+      <section class="slideshow">
+        <h3>Se flere billeder af lokalerne</h3>
+        <div class="slideshowDiv">
+          <div class="slidesImg">
             <picture>
-                <source media="(min-width: 768px)" srcset="../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/slideshow3.png">
-                <source media="(min-width: 375px)" srcset="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow2.png">
-                <img src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow2.png" alt="">
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/slideshow1.png
+                " />
+              <source
+                media="(min-width: 375px)"
+                srcset="
+                  ../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow1.png
+                " />
+              <img
+                src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow1.png"
+                alt="" />
             </picture>
-        </div>
+          </div>
 
-        <div class="slidesImg">
+          <div class="slidesImg">
             <picture>
-                <source media="(768px)" srcset="../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/slideshow3.png">
-                <source media="(375px)" srcset="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow3.png">
-                <img src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow3.png" alt="">
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/slideshow3.png
+                " />
+              <source
+                media="(min-width: 375px)"
+                srcset="
+                  ../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow2.png
+                " />
+              <img
+                src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow2.png"
+                alt="" />
             </picture>
-        </div>
+          </div>
 
-        <div class="slidesImg">
+          <div class="slidesImg">
             <picture>
-                <source media="(min-width: 768px)" srcset="../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/slideshow4.png">
-                <source media="(min-width: 375px)" srcset="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow4.png">
-                <img src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow4.png" alt="">
+              <source
+                media="(768px)"
+                srcset="
+                  ../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/slideshow3.png
+                " />
+              <source
+                media="(375px)"
+                srcset="
+                  ../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow3.png
+                " />
+              <img
+                src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow3.png"
+                alt="" />
             </picture>
-        </div>
+          </div>
 
-        <div class="slidesImg">
+          <div class="slidesImg">
             <picture>
-                <source media="(min-width: 768px)" srcset="../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/slideshow5.png">
-                <source media="(min-width: 375px)" srcset="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow5.png">
-                <img src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow5.png" alt="">
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/slideshow4.png
+                " />
+              <source
+                media="(min-width: 375px)"
+                srcset="
+                  ../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow4.png
+                " />
+              <img
+                src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow4.png"
+                alt="" />
             </picture>
-        </div>
+          </div>
 
-        <div class="slidesImg">
+          <div class="slidesImg">
             <picture>
-                <source media="(min-width: 768px)" srcset="../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/slideshow6.png">
-                <source media="(min-width: 375px)" srcset="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow6.png">
-                <img src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow6.png" alt="">
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/slideshow5.png
+                " />
+              <source
+                media="(min-width: 375px)"
+                srcset="
+                  ../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow5.png
+                " />
+              <img
+                src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow5.png"
+                alt="" />
             </picture>
-        </div>
+          </div>
 
-        <div class="slidesImg">
+          <div class="slidesImg">
             <picture>
-                <source media="(min-width: 768px)" srcset="../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/slideshow7.png">
-                <source media="(min-width: 375px)" srcset="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow7.png">
-                <img src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow7.png" alt="">
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/slideshow6.png
+                " />
+              <source
+                media="(min-width: 375px)"
+                srcset="
+                  ../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow6.png
+                " />
+              <img
+                src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow6.png"
+                alt="" />
             </picture>
-        </div>
+          </div>
 
-        <div class="slidesImg">
+          <div class="slidesImg">
             <picture>
-                <source media="(min-width: 768px)" srcset="../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/slideshow8.png">
-                <source media="(min-width: 375px)" srcset="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow8.png">
-                <img src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow8.png" alt="">
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/slideshow7.png
+                " />
+              <source
+                media="(min-width: 375px)"
+                srcset="
+                  ../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow7.png
+                " />
+              <img
+                src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow7.png"
+                alt="" />
             </picture>
-        </div>
+          </div>
 
-        <div class="slidesImg">
+          <div class="slidesImg">
             <picture>
-                <source media="(min-width: 768px)" srcset="../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/slideshow9.png">
-                <source media="(min-width: 375px)" srcset="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow9.png">
-                <img src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow9.png" alt="">
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/slideshow8.png
+                " />
+              <source
+                media="(min-width: 375px)"
+                srcset="
+                  ../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow8.png
+                " />
+              <img
+                src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow8.png"
+                alt="" />
             </picture>
-        </div>
+          </div>
 
-        <div class="slidesImg">
+          <div class="slidesImg">
             <picture>
-                <source media="(min-width: 768px)" srcset="../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/slideshow10.png">
-                <source media="(min-width: 375px)" srcset="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow10.png">
-                <img src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow10.png" alt="">
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/slideshow9.png
+                " />
+              <source
+                media="(min-width: 375px)"
+                srcset="
+                  ../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow9.png
+                " />
+              <img
+                src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow9.png"
+                alt="" />
             </picture>
-        </div>
-        <div style="text-align:center">
+          </div>
+
+          <div class="slidesImg">
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/slideshow10.png
+                " />
+              <source
+                media="(min-width: 375px)"
+                srcset="
+                  ../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow10.png
+                " />
+              <img
+                src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/slideshow10.png"
+                alt="" />
+            </picture>
+          </div>
+          <div style="text-align: center">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
@@ -244,15 +415,14 @@
             <span class="dot" onclick="currentSlide(8)"></span>
             <span class="dot" onclick="currentSlide(9)"></span>
             <span class="dot" onclick="currentSlide(10)"></span>
+          </div>
         </div>
-        </div>
-        </section>
-        
-        <section>
-            <!--FEP Sektion-->
-        </section>
+      </section>
+
+      <section>
+        <!--FEP Sektion-->
+      </section>
     </main>
-    <footer>
-    </footer>
+    <footer></footer>
   </body>
 </html>

@@ -145,7 +145,8 @@ body{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 1rem;
+      gap: 2rem;
+      padding-right: 2rem;
   }
   
   .burgerMenu{
@@ -272,7 +273,7 @@ body{
       flex-direction: row;
       gap: 2rem;
       margin-bottom: 2rem;
-      justify-content: center;
+      justify-content: flex-start;
   }
   
   .socialIcons{

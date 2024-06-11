@@ -1,7 +1,7 @@
 .heroVE{
     background-image: url(../Img/mobil_img/vinsmagning_Og_Events/hero.png);
     min-height: 20vh;
-    margin-top: 6rem;
+    margin-top: 5rem;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;

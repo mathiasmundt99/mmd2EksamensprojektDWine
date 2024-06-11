@@ -21,7 +21,7 @@ const baseURL = 'https://api.mastth.dk/wp-json/wp/v2';
 const sectionVin = document.querySelector(".månedensVine");
 const sectionEvents = document.querySelector(".eventsCTA")
 
-//Javascript til at fange vores data fra wordpress apiet til månedens vine og vinsmagning og events
+//Denne funktion bruges til at fetche data fra baseURL og denne funktion skal kaldes til sidst for at vise indholdet sammen med en funktion hvor indholdet er indsat og appendet.
 function getData(categoryID,specificFunction){     
 fetch(baseURL+`/posts?categories=${categoryID}&per_page=20`)
     .then(res => res.json())
@@ -29,7 +29,7 @@ fetch(baseURL+`/posts?categories=${categoryID}&per_page=20`)
     .catch(err => console.log("Error: ",err))
 }
 
-//funktion til at vise dataen til månedens vine som vi har hentet fra apiet
+//denne funktion bruges til at lave elementerne hvor data kan indsættes til wineposts, hente dataen og sætte det ind i de elementerne som er lavet og til sidst vises(appendes) i den variabel som vi har lavet øverst på siden
 function renderWinePosts(winePosts) {
     winePosts.forEach((winePost) => {
         const articleEl = document.createElement("article");
@@ -53,7 +53,7 @@ function renderWinePosts(winePosts) {
     });
 }
 
- //funktion til at vise dataen til vinsmagning og events som vi har hentet fra apiet
+//denne funktion bruges til at lave elementerne hvor data kan indsættes til eventposts, hente dataen og sætte det ind i de elementerne som er lavet og til sidst vises(appendes) i den variabel som vi har lavet øverst på siden
 function renderEventPosts(eventPosts){
     eventPosts.forEach(eventPost =>{
         const articleEvents = document.createElement("article")
@@ -74,6 +74,7 @@ function renderEventPosts(eventPosts){
     })
 }
 
+//Denne funktion skal bruges når indholdet til de specifikke eventposts skal generes dynamisk. Her fetches baseurl + posts + et id som skal bruges når de speccifikke eventposts skal vises.
 function getIdData(id,specificFunction){     
     fetch(baseURL+`/posts/${id}`)
         .then(res => res.json())
@@ -81,6 +82,8 @@ function getIdData(id,specificFunction){
         .catch(err => console.log("Error: ",err))
     }
 
+    
+    //Denne funktion bruges til at hente det enkelte id fra URL'et. Først gemmes en querystring i en variabel. denne querystring søges der i og ved hjælp af URLSearchParams ledes der efter id. Tilsidst returneres id. 
     function getPostIdFromUrl(){
         const queryString = window.location.search
         const urlParameter = new URLSearchParams (queryString)

@@ -46,9 +46,9 @@ function renderWinePosts(winePosts) {
         label.src = winePost.acf.origin;
         image.src = winePost.acf.image.sizes.large;
         description.textContent = winePost.acf.description;
-        price.textContent = "Pris pr. glas: " + winePost.acf.price + ",-";
-        // buttonMV.innerHTML = `<a href="${winePost.acf.link_to_webshop}" target="_blank">Læs mere om vinen</a>`;
+        price.textContent = "Pris pr. glas: " + winePost.acf.price + " kr.";
         buttonMV.innerHTML = `<a href="${winePost.acf.link_to_webshop}" target="_blank">Læs mere om vinen</a>`;
+
         articleEl.append(title, label, image, description, price, buttonMV);
     });
 }
@@ -68,7 +68,7 @@ function renderEventPosts(eventPosts){
         titleEvents.textContent = eventPost.acf.title
         date.textContent = eventPost.acf.location
         snackDescription.textContent = eventPost.acf.snack_description
-        buttonEventCta.innerHTML = "<a href = 'specifikEvent.html?id="+eventPost.id + "'>Læs mere om eventet </a>" 
+        buttonEventCta.innerHTML = "<a href ='specifikEvent.html?id="+ eventPost.id + "'>Læs mere om vinen</a>"
         
         articleEvents.append(imageEvents, titleEvents, date, snackDescription, buttonEventCta)
     })

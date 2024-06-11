@@ -3,43 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Nyd lækre cocktails hos D'Wine Bar i hjertet af Aalborg. Vi tilbyder også klassiske og innovative drikke.">
+    <meta
+      name="description"
+      content="Nyd lækre cocktails hos D'Wine Bar i hjertet af Aalborg. Vi tilbyder også klassiske og innovative drikke." />
     <title>Menu for Cocktails - D'wine Bar</title>
     <link rel="stylesheet" href="../Assets/CSS/globalStyle.css" />
     <link rel="stylesheet" href="../Assets/CSS/menu.css" />
     <script src="../Assets/JS/app.js" defer></script>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../Assets/Img/desktop_img/forside/logo.png" />
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <a href="index.html"
-          ><img src="../Assets/Img/mobil_img/header/logo.png" alt="Logo"
-        /></a>
+        <a href="../HTML/index.html">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="../assets/img/desktop_img/forside/logo.png" />
+            <img
+              src="../Assets/Img/mobil_img/header/logo.png"
+              alt="logo"
+              loading="lazy" />
+          </picture>
+        </a>
         <ul class="navMenu">
-          <li class="navItem"><a href="#" class="navLink">Månedens vine</a></li>
-          <li class="navItem"><a href="#" class="navLink">Menu</a></li>
-          <li class="navItem" style="color: #f2f2f2">
+          <li class="navItem">
+            <a href="../HTML/maanedensVin.html" class="navLink"
+              >Månedens vine</a
+            >
+          </li>
+          <li class="navItem">
+            <a href="../HTML/menuFood.html" class="navLink">Menu</a>
+          </li>
+          <li class="navItem" id="navArrangementer" style="color: #f2f2f2">
             Arrangementer↓
             <ul class="dropDown">
               <li class="navItem">
-                <a href="#" class="navLink">Vinsmagning og events</a>
+                <a href="../HTML/vinsmagningOgEvents.html" class="navLink"
+                  >Vinsmagning og events</a
+                >
               </li>
               <li class="navItem">
-                <a href="#" class="navLink">Privat vinsmagning</a>
+                <a href="../HTML/privatVinsmagning.html" class="navLink"
+                  >Privat vinsmagning</a
+                >
               </li>
             </ul>
           </li>
           <li class="navItem">
-            <a href="#" class="navLink">Hold din fest hos os</a>
+            <a href="../HTML/festHosDWine.html" class="navLink"
+              >Hold din fest hos os</a
+            >
           </li>
           <li class="navItem">
-            <a href="#" class="navLink">Køb vin online</a>
+            <a href="https://d-wine.dk/" target="_blank" class="navLink"
+              >Køb vin online</a
+            >
           </li>
-          <li class="navItem"><a href="#" class="navLink">Gavekort</a></li>
           <li class="navItem">
-            <a href="#" class="navLink">Vores identitet</a>
+            <a href="#scroll" class="navLink">Gavekort</a>
           </li>
-          <li class="navItem"><a href="#" class="navLink">Praktisk info</a></li>
+          <li class="navItem">
+            <a href="../HTML/VoresIdentitet.html" class="navLink"
+              >Vores identitet</a
+            >
+          </li>
+          <li class="navItem">
+            <a href="../HTML/praktiskInformation.html" class="navLink"
+              >Praktisk info</a
+            >
+          </li>
         </ul>
         <div class="burgerMenu">
           <span class="bar"></span>
@@ -64,7 +100,9 @@
           <picture>
             <source
               media="(min-width: 1024px)"
-              srcset="../Assets/Img/desktop_img/menu_Lidt_Godt_At_Spise/ikon1.svg" />
+              srcset="
+                ../Assets/Img/desktop_img/menu_Lidt_Godt_At_Spise/ikon1.svg
+              " />
             <img
               src="../Assets/Img/mobil_img/menu_Lidt_Godt_At_Spise/ikon1.svg"
               alt="Vin ikon"
@@ -76,15 +114,14 @@
           <article>
             <h2>Vores Vin</h2>
             <p>
-              Er I færre end 8 personer, har vi i vores vinbar to taster-menuer,
-              der fungerer som en slags mini-vinsmagning. Her serverer og
-              fortæller vi om det vin I får serveret, og I kommer omkring både
-              bobler, hvidvin og rødvin. Dette kræver ingen forudbestilling.
+              Vi får hele tiden nye og spændene vine ind ad døren og derfor har
+              vi ikke et fysisk vinkort. Kom ned og oplev vores "vinkort" i
+              baren hvor du kan se alle de vine vi tilbyder. Hver måned udvælger
+              vi dog forskellige vine som vi serverer på glas.
             </p>
-            <p>
-              Taster-menu 3 glas: 185 kr. pr. person. <br />
-              Taster-menu 5 glas: 315 kr. pr. person.
-            </p>
+            <a class="btnFont gradientBtn" href="maanedensVin.html"
+              >Se alle månedens vine</a
+            >
           </article>
           <article>
             <h2>Taster menu</h2>
@@ -124,8 +161,7 @@
         <article class="foodItem">
           <img
             src="../Assets/Img/mobil_img/menu_Cocktails/Rhumbar Gin sour.png"
-            alt=""
-          />
+            alt="" />
           <h3 class="title">Rhubarb Gin Sour</h3>
           <p>
             Et sommerligt take på gin sour, lavet på vores BCN-gin fra
@@ -137,8 +173,7 @@
         <article class="foodItem">
           <img
             src="../Assets/Img/mobil_img/menu_Cocktails/Cognac sour.png"
-            alt=""
-          />
+            alt="" />
           <h3 class="title">Cognac Sour</h3>
           <p>
             Baseres på cognac, som destilleres på druer i Cognac-distriktet i
@@ -150,8 +185,7 @@
         <article class="foodItem">
           <img
             src="../Assets/Img/mobil_img/menu_Cocktails/Berry & Basil Gin.png"
-            alt=""
-          />
+            alt="" />
           <h3 class="title">Berry & Basil Gin Tonic</h3>
           <p>
             Baseres på BCN-gin fra Barcelona. Hjemmelavet jordbær og
@@ -162,8 +196,7 @@
         <article class="foodItem">
           <img
             src="../Assets/Img/mobil_img/menu_Cocktails/D'wine Classico.png"
-            alt=""
-          />
+            alt="" />
           <h3 class="title">D'Wine Classico</h3>
           <p>
             På BCN-gin fra Barcelona, destilleret på druer fra Priorat.
@@ -175,8 +208,7 @@
         <article class="foodItem">
           <img
             src="../Assets/Img/mobil_img/menu_Cocktails/Rhubar Royal.png"
-            alt=""
-          />
+            alt="" />
           <h3 class="title">Rhubarb Royal</h3>
           <p>
             I denne populære drink, er der to typer druebaseret alkohol. BCN-gin
@@ -188,8 +220,7 @@
         <article class="foodItem">
           <img
             src="../Assets/Img/mobil_img/menu_Cocktails/Summer Breeze.png"
-            alt=""
-          />
+            alt="" />
           <h3 class="title">Summer Breeze</h3>
           <p>
             Baseres på BCN-gin fra Barcelona, destilleret på druer fra Priorat.
@@ -201,8 +232,7 @@
         <article class="foodItem">
           <img
             src="../Assets/Img/mobil_img/menu_Cocktails/Tawny Portiny.png"
-            alt=""
-          />
+            alt="" />
           <h3 class="title">Tawny Portini</h3>
           <p>
             Dyb, rund og sødmefuld cocktail. Portvin, kaffe, kahlua shaket til
@@ -213,8 +243,7 @@
         <article class="foodItem">
           <img
             src="../Assets/Img/mobil_img/menu_Cocktails/PX Colada.png"
-            alt=""
-          />
+            alt="" />
           <h3 class="title">PX Colada</h3>
           <p>
             Bygget på den søde PX Sherry, med ananas og kokos, appelsin og
@@ -226,8 +255,7 @@
         <article class="foodItem">
           <img
             src="../Assets/Img/mobil_img/menu_Cocktails/Vermut Spritz.png"
-            alt=""
-          />
+            alt="" />
           <h3 class="title">Vermut Spritz</h3>
           <p>
             Chefen er helt tosset med vermut, som ifølge ham er det nye sort.
@@ -239,8 +267,7 @@
         <article class="foodItem">
           <img
             src="../Assets/Img/mobil_img/menu_Cocktails/Not an Aparol Spritz.png"
-            alt=""
-          />
+            alt="" />
           <h3 class="title">Not an Aparol Spritz</h3>
           <p>
             Vores twist på den klassiske Aperol Spritz - lavet på Aperol og
@@ -253,8 +280,7 @@
         <article class="foodItem">
           <img
             src="../Assets/Img/mobil_img/menu_Cocktails/Vermut Negre.png"
-            alt=""
-          />
+            alt="" />
           <h3 class="title">Vermut Negre</h3>
           <p>
             Fyldig, let bitter og klassisk spansk. I Spanien er der tradition
@@ -267,8 +293,7 @@
         <article class="foodItem">
           <img
             src="../Assets/Img/mobil_img/menu_Cocktails/Sangria.png"
-            alt=""
-          />
+            alt="" />
           <h3 class="title">Sangria</h3>
           <p>
             Aalborgs bedste sangria – synes vi selv Smager af sol og sommer – og
@@ -279,8 +304,7 @@
         <article class="foodItem">
           <img
             src="../Assets/Img/mobil_img/menu_Cocktails/Kande Sangria.png"
-            alt=""
-          />
+            alt="" />
           <h3 class="title">Kande Sangria</h3>
           <p>Aalborgs bedste sangria - Bara på kande!</p>
           <p>68,00 Kr</p>

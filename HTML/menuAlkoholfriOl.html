@@ -3,43 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Hos D'Wine Bar kan du også få øl og det uden alkohol. Kom og oplev vores egne importerede øl.">
+    <meta
+      name="description"
+      content="Hos D'Wine Bar kan du også få øl og det uden alkohol. Kom og oplev vores egne importerede øl." />
     <title>Menu for Alkoholfri & Øl - D'wine Bar</title>
     <link rel="stylesheet" href="../Assets/CSS/globalStyle.css" />
     <link rel="stylesheet" href="../Assets/CSS/menu.css" />
     <script src="../Assets/JS/app.js" defer></script>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../Assets/Img/desktop_img/forside/logo.png" />
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <a href="index.html"
-          ><img src="../Assets/Img/mobil_img/header/logo.png" alt="Logo"
-        /></a>
+        <a href="../HTML/index.html">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="../assets/img/desktop_img/forside/logo.png" />
+            <img
+              src="../Assets/Img/mobil_img/header/logo.png"
+              alt="logo"
+              loading="lazy" />
+          </picture>
+        </a>
         <ul class="navMenu">
-          <li class="navItem"><a href="#" class="navLink">Månedens vine</a></li>
-          <li class="navItem"><a href="#" class="navLink">Menu</a></li>
-          <li class="navItem" style="color: #f2f2f2">
+          <li class="navItem">
+            <a href="../HTML/maanedensVin.html" class="navLink"
+              >Månedens vine</a
+            >
+          </li>
+          <li class="navItem">
+            <a href="../HTML/menuFood.html" class="navLink">Menu</a>
+          </li>
+          <li class="navItem" id="navArrangementer" style="color: #f2f2f2">
             Arrangementer↓
             <ul class="dropDown">
               <li class="navItem">
-                <a href="#" class="navLink">Vinsmagning og events</a>
+                <a href="../HTML/vinsmagningOgEvents.html" class="navLink"
+                  >Vinsmagning og events</a
+                >
               </li>
               <li class="navItem">
-                <a href="#" class="navLink">Privat vinsmagning</a>
+                <a href="../HTML/privatVinsmagning.html" class="navLink"
+                  >Privat vinsmagning</a
+                >
               </li>
             </ul>
           </li>
           <li class="navItem">
-            <a href="#" class="navLink">Hold din fest hos os</a>
+            <a href="../HTML/festHosDWine.html" class="navLink"
+              >Hold din fest hos os</a
+            >
           </li>
           <li class="navItem">
-            <a href="#" class="navLink">Køb vin online</a>
+            <a href="https://d-wine.dk/" target="_blank" class="navLink"
+              >Køb vin online</a
+            >
           </li>
-          <li class="navItem"><a href="#" class="navLink">Gavekort</a></li>
           <li class="navItem">
-            <a href="#" class="navLink">Vores identitet</a>
+            <a href="#scroll" class="navLink">Gavekort</a>
           </li>
-          <li class="navItem"><a href="#" class="navLink">Praktisk info</a></li>
+          <li class="navItem">
+            <a href="../HTML/VoresIdentitet.html" class="navLink"
+              >Vores identitet</a
+            >
+          </li>
+          <li class="navItem">
+            <a href="../HTML/praktiskInformation.html" class="navLink"
+              >Praktisk info</a
+            >
+          </li>
         </ul>
         <div class="burgerMenu">
           <span class="bar"></span>
@@ -64,7 +100,9 @@
           <picture>
             <source
               media="(min-width: 1024px)"
-              srcset="../Assets/Img/desktop_img/menu_Lidt_Godt_At_Spise/ikon1.svg" />
+              srcset="
+                ../Assets/Img/desktop_img/menu_Lidt_Godt_At_Spise/ikon1.svg
+              " />
             <img
               src="../Assets/Img/mobil_img/menu_Lidt_Godt_At_Spise/ikon1.svg"
               alt="Vin ikon"
@@ -81,10 +119,12 @@
               baren hvor du kan se alle de vine vi tilbyder. Hver måned udvælger
               vi dog forskellige vine som vi serverer på glas.
             </p>
-            <!-- <button></button> -->
+            <a class="btnFont gradientBtn" href="maanedensVin.html"
+              >Se alle månedens vine</a
+            >
           </article>
           <article>
-            <h3>Taster menu</h3>
+            <h2>Taster menu</h2>
             <p>
               Er I færre end 8 personer, har vi i vores vinbar to taster-menuer,
               der fungerer som en slags mini-vinsmagning. Her serverer og
@@ -98,7 +138,7 @@
           </article>
         </div>
       </section>
-      
+
       <nav class="localNav">
         <a href="menuFood.html#foodTitle">Lidt godt at spise</a>
         <a href="menuCocktails.html#cocktailsTitle">Cocktails</a>
@@ -114,8 +154,7 @@
         <article class="foodItem">
           <img
             src="../Assets/Img/mobil_img/menu_Øl_Og_Det_Uden_Alkohol/San Miguel 0,25.png"
-            alt=""
-          />
+            alt="" />
           <h3 class="title">San Miguel 0,25L</h3>
           <p>
             De små nuttede øl vi kender fra España. Vi har den også i en
@@ -126,8 +165,7 @@
         <article class="foodItem">
           <img
             src="../Assets/Img/mobil_img/menu_Øl_Og_Det_Uden_Alkohol/Alambra resavar.png"
-            alt=""
-          />
+            alt="" />
           <h3 class="title">Alambra Reserva ”1925” 0,33 L</h3>
           <p>
             Baseres på cognac, som destilleres på druer i Cognac-distriktet i
@@ -139,8 +177,7 @@
         <article class="foodItem">
           <img
             src="../Assets/Img/mobil_img/menu_Øl_Og_Det_Uden_Alkohol/Inedit.png"
-            alt=""
-          />
+            alt="" />
           <h3 class="title">Inedit 0,33L</h3>
           <p>
             Kåret flere gange som verdens bedste øl. Lavet af den tidligere ejer
@@ -151,8 +188,7 @@
         <article class="foodItem">
           <img
             src="../Assets/Img/mobil_img/menu_Øl_Og_Det_Uden_Alkohol/A.K DAMN.png"
-            alt=""
-          />
+            alt="" />
           <h3 class="title">A.K. Damm 0,33L</h3>
           <p>
             En øl lavet på klassisk Alsace-facon og minder lidt om en weissbier.
@@ -163,8 +199,7 @@
         <article class="foodItem">
           <img
             src="../Assets/Img/mobil_img/menu_Øl_Og_Det_Uden_Alkohol/Moritz.png"
-            alt=""
-          />
+            alt="" />
           <h3 class="title">Moritz 0,33L</h3>
           <p>
             Pilsnerøl på 5,4 %. Lavet på Spaniens ældste bryggeri og en
@@ -174,8 +209,7 @@
         </article>
         <article class="foodItem">
           <img
-            src="../Assets/Img/mobil_img/menu_Øl_Og_Det_Uden_Alkohol/San Miguel 0,0%.png"
-          />
+            src="../Assets/Img/mobil_img/menu_Øl_Og_Det_Uden_Alkohol/San Miguel 0,0%.png" />
           <h3 class="title">San Miguel 0,0%</h3>
           <p>Som vi kender den, blot uden procenter.</p>
           <p>34,00 Kr</p>
@@ -183,8 +217,7 @@
         <article class="foodItem">
           <img
             src="../Assets/Img/mobil_img/menu_Øl_Og_Det_Uden_Alkohol/virgin_cocktails.png"
-            alt=""
-          />
+            alt="" />
           <h3 class="title">Virgin Cocktails</h3>
           <p>Vælg mellem Rhubarb Love, Sour, Summer Breeze</p>
           <p>50,00 Kr</p>
@@ -192,8 +225,7 @@
         <article class="foodItem">
           <img
             src="../Assets/Img/mobil_img/menu_Øl_Og_Det_Uden_Alkohol/Økologisk saft fra møn.png"
-            alt=""
-          />
+            alt="" />
           <h3 class="title">Økologisk saft fra Møn</h3>
           <p>Hyldeblomst, Rabarber</p>
           <p>35,00 Kr</p>
@@ -201,8 +233,7 @@
         <article class="foodItem">
           <img
             src="../Assets/Img/mobil_img/menu_Øl_Og_Det_Uden_Alkohol/sodavand.png"
-            alt=""
-          />
+            alt="" />
           <h3 class="title">Sodavand</h3>
           <p>Cola, Cola Zero, Fanta, Danskvand m/u citrus</p>
           <p>30,00 Kr</p>

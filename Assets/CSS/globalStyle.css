@@ -164,7 +164,7 @@ body{
   li{
       list-style: none;
       font-family: "Mulish", sans-serif;
-      font-size: 16px;
+      font-size: 15px;
   }
   
   .navbar{
@@ -230,7 +230,7 @@ body{
   }
   
   
-  @media(max-width: 1024px){
+  @media(max-width: 1220px){
       .burgerMenu{
           display: block;
       }
@@ -315,7 +315,7 @@ body{
       flex-direction: row;
       gap: 2rem;
       margin-bottom: 2rem;
-      justify-content: flex-start;
+      justify-content: center;
   }
   
   .socialIcons{
@@ -336,6 +336,13 @@ body{
       text-align: center;
       gap: 2rem;
   }
+
+  @media(min-width: 768px){
+    .mail, .mobile, .location{
+        justify-content: center;
+    }
+
+  }
   
   @media(min-width: 1024px){
      footer{
@@ -351,6 +358,10 @@ body{
 
   footer p{
     font-size: 16px;
+  }
+
+  .mail, .mobile, .location{
+    justify-content: flex-start;
   }
      
   }

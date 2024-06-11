@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Besøg D'Wine Bar for spændende vinarrangementer. Deltag i vores vinsmagninger og specielle events for en uforglemmelig aften i Aalborg.">
-    <title>Vinsmagning & Events</title>
+    <meta
+      name="description"
+      content="Besøg D'Wine Bar for spændende vinarrangementer. Deltag i vores vinsmagninger og specielle events for en uforglemmelig aften i Aalborg." />
+    <title>D'Wine Bar - Vinsmagning & Events</title>
     <link rel="stylesheet" href="../Assets/CSS/globalStyle.css" />
     <link rel="stylesheet" href="../Assets/CSS/vinsmagningOgEvents.css" />
     <script src="../Assets/JS/app.js" defer></script>
@@ -17,21 +19,27 @@
   <body>
     <header>
       <nav class="navbar">
-        <a href="../HTML/index.html"></a>
-        <picture>
-          <source
-            media="(min-width: 1024px)"
-            srcset="../assets/img/desktop_img/forside/logo.png" />
-          <img
-            src="../Assets/Img/mobil_img/header/logo.png"
-            alt="logo"
-            loading="lazy" />
-        </picture>
-      </a>
+        <a href="../HTML/index.html">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="../assets/img/desktop_img/forside/logo.png" />
+            <img
+              src="../Assets/Img/mobil_img/header/logo.png"
+              alt="logo"
+              loading="lazy" />
+          </picture>
+        </a>
         <ul class="navMenu">
-          <li class="navItem"><a href="../HTML/maanedensVin.html" class="navLink">Månedens vine</a></li>
-          <li class="navItem"><a href="../HTML/menuFood.html" class="navLink">Menu</a></li>
-          <li class="navItem" style="color: #f2f2f2">
+          <li class="navItem">
+            <a href="../HTML/maanedensVin.html" class="navLink"
+              >Månedens vine</a
+            >
+          </li>
+          <li class="navItem">
+            <a href="../HTML/menuFood.html" class="navLink">Menu</a>
+          </li>
+          <li class="navItem" id="navArrangementer" style="color: #f2f2f2">
             Arrangementer↓
             <ul class="dropDown">
               <li class="navItem">
@@ -52,16 +60,20 @@
             >
           </li>
           <li class="navItem">
-            <a href="https://d-wine.dk/" class="navLink">Køb vin online</a>
+            <a href="https://d-wine.dk/" target="_blank" class="navLink"
+              >Køb vin online</a
+            >
           </li>
           <li class="navItem">
             <a href="#scroll" class="navLink">Gavekort</a>
           </li>
           <li class="navItem">
-            <a href="#" class="navLink">Vores identitet</a>
+            <a href="../HTML/VoresIdentitet.html" class="navLink"
+              >Vores identitet</a
+            >
           </li>
           <li class="navItem">
-            <a href="../HTML/privatVinsmagning.html" class="navLink"
+            <a href="../HTML/praktiskInformation.html" class="navLink"
               >Praktisk info</a
             >
           </li>

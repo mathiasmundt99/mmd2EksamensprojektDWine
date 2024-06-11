@@ -25,6 +25,10 @@ section {
     transform: translate(-50%, -50%);
   }
 
+  .introSec h2{
+    text-align: center;
+  }
+
   /* Fest sections */
 
   .festSection{
@@ -140,6 +144,11 @@ section {
 
 .slideshow h3 {
     text-align: center;
+    margin-top:0;
+}
+
+.slideshow{
+  padding-top: 1rem;
 }
 
 .slideshowDiv {

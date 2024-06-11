@@ -18,6 +18,10 @@
     gap: 1rem;
 }
 
+.specifikIntro h1{
+margin-bottom: 0;
+}
+
 .specifikButton, .eventsBtn{
 cursor: pointer;
     color: var(--text);
@@ -88,12 +92,14 @@ cursor: pointer;
     .specfikDescription p{
         margin-left: 8%;
         margin-right: 8%;
+        margin-top: 4rem;
     }
 }
 
 @media(min-width: 768px){
     .specifikFlex{
         display: flex;
+        align-items: flex-end;
     }
 
     .specifikImg{

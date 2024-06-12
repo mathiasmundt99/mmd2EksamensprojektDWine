@@ -38,4 +38,29 @@ function getHomePageData(categoryID,specificFunction){
         //her kaldes funktion som til sidst indsætter det de 3 vine på forisden ved hjælp af det specifikke id og den funktion hvor indholdet er indsat og appendet via.
         getHomePageData(13,renderForsideWinePosts)
 
+
+let slideIndex = 0;
+
+function showSlides() {
+    let i;
+    let slides = document.querySelectorAll(".heroSectionForside picture img");
+
+    //Her ittereres igennem alle slides, og der sættes display = none på slides
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    // Her kører et loop som kontrolere om slideIndex er større end slide.lenght
+    // Hvis/Når den bliver større end .lentgh sættes slideIndex tilbage til 1
+    // Hvilket giver et loop hvor den køre hele tiden
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+
+    slides[slideIndex-1].style.display = "block";  
+}
+
+setInterval(showSlides, 3000);
+
+showSlides() 
+
+
  

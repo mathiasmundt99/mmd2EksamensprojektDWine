@@ -25,7 +25,7 @@ function helperSlideShow(){
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";  
     }
-    // Her kører et loop som kontrolere om slideIndex er større end slide.lenght
+    // Her er en if statement som kontrolere om slideIndex er større end slide.lenght
     // Hvis/Når den bliver større end .lentgh sættes slideIndex tilbage til 1
     // Hvilket giver et loop hvor den køre hele tiden
     slideIndex++;

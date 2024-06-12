@@ -71,17 +71,8 @@ a{
     background-color: var(--background);
     text-align: center;
 }
-hr{
-    width: 8rem;
-    border: 0;
-    height: 1px;
-    background-color: var(--icon);
-}
-.introIcon{
-    margin: 2rem;
-    display: flex;
-    align-items: center;
-}
+
+/* åbningstider styling */
 
 .openingsHoursSection{
     position: relative;

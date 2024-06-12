@@ -10,7 +10,7 @@ section {
   
   /* Ikon */
 
-  .iconMV hr{
+  /* .iconMV hr{
     width: 100px;
     border:none;
     border-bottom: 1px solid #B2857F;
@@ -19,7 +19,10 @@ section {
 
   .iconMV{
     display: flex;
-  }
+  } */
+.menuIcon{
+  margin-bottom: 2rem;
+}
 
   article{
     padding: 0.5rem;
@@ -111,11 +114,6 @@ section {
       margin-bottom: 2rem;
     }
 
-   /* Ikon */ 
-    .iconMV hr{
-      width: 400px;      
-  }
-
       /* Nav */
     .localNav{
         background-color: var(--darkRed);
@@ -141,17 +139,19 @@ section {
       }
 
       /* Ikon */
-      .iconMV hr{
+      /* .iconMV hr{
         width: 100px;
         border:none;
         border-bottom: 1px solid #B2857F;
         margin-bottom: 1rem;
-    }
+    } */
     
-    .iconMV{
+    /* .iconMV{
         display: flex;
+    } */
+    .hrMenu{
+      width: 10rem;
     }
-
 
       /* Start articles setup */
   .introSection {

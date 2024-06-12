@@ -22,7 +22,7 @@
 margin-bottom: 0;
 }
 
-.specifikButton, .eventsBtn{
+/* .specifikButton, .eventsBtn{
 cursor: pointer;
     color: var(--text);
     font-size: 16px;
@@ -35,8 +35,7 @@ cursor: pointer;
 .specifikButton:hover, .eventsBtn:hover{
     background-color: var(--text);
     color: var(--background);
-}
-
+} */
 /*Progressiv disclosure (entry points)*/
 .entryPoints{
     background-color: var(--background);
@@ -54,39 +53,18 @@ cursor: pointer;
     margin: 1rem auto;
 }
 .firstSubCard{
-    background-image: url(../Img/mobil_img/focused_Entry_Points/menu.png);
+    background-image: url(../Img/mobil_img/focused_Entry_Points/quiz_Aften.png);
 }
 .secondSubCard{
-    background-image: url(../Img/mobil_img/focused_Entry_Points/månedens_Vine.png);
+    background-image: url(../Img/mobil_img/focused_Entry_Points/jubilæumsfest.png);
 }
-.cards{
-    margin-top: 10px;
-    padding: 40px 30px 40px 30px;
-    max-width: 360px;
-    height: 420px;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-}
+
+
 
 @media(min-width: 768px){
     .specifikIntro, .specifikIcons, .specifikButton, .specfikDescription, .specifikImg{
         margin-left: 5%;
         margin-right: 5%;
-    }
-
-    .entryPoints{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        gap: 1rem;
-        padding: 5%;
-    }
-    .entryTitle{
-        font-size: 20px;
     }
 
     .specfikDescription p{
@@ -132,5 +110,18 @@ cursor: pointer;
 
     .specifikImg img{
         max-width: 30vw;
+    }
+    .entryPoints{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 1rem;
+        padding: 5%;
+        justify-items: center;
+    }
+    .entryTitle{
+        font-size: 20px;
+    }
+    .entryContent{
+        font-size: 16px;
     }
 }

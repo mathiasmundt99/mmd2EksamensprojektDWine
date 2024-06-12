@@ -34,9 +34,23 @@
 
 // Kilde https://www.w3schools.com/howto/howto_js_slideshow.asp
 let slideIndex = 0;
+let myTimeOut;
 showSlides();
 
 function showSlides() {
+    helperSlideShow();
+    myTimeOut = setTimeout(showSlides, 3500);
+}
+
+// Denne funktion er til at kunne klikke på dots i slideshowert for at kunne skifte billede
+function currentSlide(n) {
+    clearTimeout(myTimeOut);
+    slideIndex = n -1;
+    helperSlideShow();
+  myTimeOut = setTimeout(showSlides, 3500);
+}
+
+function helperSlideShow(){
     let i;
     let slides = document.getElementsByClassName("slidesImg");
     let dots = document.getElementsByClassName("dot");
@@ -51,11 +65,6 @@ function showSlides() {
     slideIndex++;
     if (slideIndex > slides.length) {slideIndex = 1}    
 
-    // Her ittereres igennem alle dots og fjerner "active"
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-
     // Her kontrolleres skærmstørrelsen, og hvis den er 1024 eller over
     // så skal der istedet vises 3 slides, ellers sættes maxSlides til 1
     let maxSlides = (window.innerWidth >= 1024) ? 3 : 1;
@@ -63,17 +72,8 @@ function showSlides() {
     for (i = 0; i < maxSlides; i++) {
       let slideToShow = slideIndex + i - 1;
       if (slideToShow >= slides.length) {
-          slideToShow -= slides.length; // Wrap around to the beginning
+          slideToShow -= slides.length; 
       }
       slides[slideToShow].style.display = "block";
   }
-    // Her sættes dots igen til active baseret på slideIndex
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 3500);
-}
-
-// Denne funktion er til at kunne klikke på dots i slideshowert for at kunne skifte billede
-function currentSlide(n) {
-    slideIndex = n - 1;
-    showSlides();
 }

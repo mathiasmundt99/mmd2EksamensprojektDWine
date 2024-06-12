@@ -2,7 +2,7 @@ body {
     background-color: var(--background);
   }
 
-section {
+.introSection, .typeTitle, .allFood{
     padding-left: 10%;
     padding-right: 10%;
     margin-bottom: 2rem;
@@ -108,7 +108,7 @@ section {
   }
 
   @media  screen and (min-width: 1024px) {
-    section {
+    .introSection, .typeTitle, .allFood {
       padding-left: 5%;
       padding-right: 5%;
       margin-bottom: 2rem;

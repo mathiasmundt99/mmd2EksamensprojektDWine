@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../Assets/CSS/forside.css" />
     <link rel="stylesheet" href="../Assets/CSS/maanedensVin.css" />
     <script src="../Assets/JS/forside.js" defer></script>
+    <script src="../Assets/JS/app.js" defer></script>
     <link
       rel="icon"
       type="image/x-icon"
@@ -66,7 +67,9 @@
             >
           </li>
           <li class="navItem">
-            <a href="praktiskInformation.html" class="navLink">Gavekort</a>
+            <a href="praktiskInformation.html#scroll" class="navLink"
+              >Gavekort</a
+            >
           </li>
           <li class="navItem">
             <a href="../HTML/VoresIdentitet.html" class="navLink"
@@ -182,13 +185,17 @@
         </p>
         <div class="introIcon">
           <hr />
-            <source
-              media="(min-width:1024px )"
-              srcset="../Assets/Img/desktop_img/forside/ikon_4.svg" />
-            <source
-              media="(min-width:400px )"
-              srcset="../Assets/Img/mobil_img/Forside/ikon_4.svg" />
-            <img class="hrIcon" src="../Assets/Img/mobil_img/Forside/ikon_4.svg" alt="En flaske vin med to vinglas ikon" loading="lazy" />
+          <source
+            media="(min-width:1024px )"
+            srcset="../Assets/Img/desktop_img/forside/ikon_4.svg" />
+          <source
+            media="(min-width:400px )"
+            srcset="../Assets/Img/mobil_img/Forside/ikon_4.svg" />
+          <img
+            class="hrIcon"
+            src="../Assets/Img/mobil_img/Forside/ikon_4.svg"
+            alt="En flaske vin med to vinglas ikon"
+            loading="lazy" />
           <hr />
         </div>
         <section class="månedensVine"></section>
@@ -296,9 +303,11 @@
         <h3>Kontakt os</h3>
         <article class="kontaktIcons"></article>
         <article class="mail">
-          <img
-            src="../Assets/Img/mobil_img/footer/ikon_mail.svg"
-            alt="Mail ikon" />
+          <a href="mailto:vinbar@d-wine.dk"
+            ><img
+              src="../Assets/Img/mobil_img/footer/ikon_mail.svg"
+              alt="Mail ikon"
+          /></a>
           <p><a href="mailto:vinbar@d-wine.dk">vinbar@d-wine.dk</a></p>
         </article>
         <article class="mobile">

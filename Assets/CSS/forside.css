@@ -246,6 +246,10 @@ table{
     font-size: 16px;
 }
 
+.homeWine{
+    padding: 5%;
+}
+
 }
 
 @media screen and (min-width: 1024px){

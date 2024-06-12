@@ -63,12 +63,14 @@ section {
   .iconMV{
     background-color: var(--darkRed);
   }
-
-  .iconMV hr{
+  /* .iconMV hr{
     width: 100px;
     border:none;
     border-bottom: 1px solid #B2857F;
     margin-bottom: 1rem;
+} */
+.iconMV .introIcon{
+  margin-bottom: 1rem;
 }
 
   .iconMV{

@@ -64,6 +64,26 @@ a{
     color: white;
 }
 
+/* hr styling */
+
+hr{
+    width: 20%;
+    border: 0;
+    height: 1px;
+    background-color: var(--icon);
+    margin: 0;
+}
+.introIcon{
+    margin: 2rem;
+    margin-bottom: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hrIcon{
+    margin: 0 2rem;
+}
+
 @media(min-width: 1024px){
     h1{
         font-family: "Playfair Display", serif;
@@ -100,6 +120,7 @@ a{
     .btnFont .gradientBtn {
         font-size: 60px;
     }
+
 }
 
 *,

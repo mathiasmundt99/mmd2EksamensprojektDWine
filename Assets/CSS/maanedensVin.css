@@ -19,17 +19,18 @@
     text-align: center;
     margin-top: 2rem;
 }
-
+/* 
 .iconMV hr{
     width: 50px;
     border:none;
     border-bottom: 1px solid #B2857F;
     margin-bottom: 1rem;
-}
+} */
 
-.iconMV{
+/* .iconMV{
     display: flex;
-}
+} */
+
 .månedensVine{
     margin-left: 10%;
     margin-right: 10%;
@@ -177,10 +178,10 @@
         width: 80%;
     }
    
-    .iconMV hr{
+    /* .iconMV hr{
         width: 400px;
               
-}
+} */
 
 .heroMV{
     background-image: url(../Img/desktop_img/månedens_vin/hero.png);

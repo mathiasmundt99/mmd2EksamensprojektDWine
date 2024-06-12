@@ -224,18 +224,6 @@ table{
 .threeIcons{
     padding: 3rem;
 }
-.entryPoints{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 1rem;
-    padding: 5%;
-}
-.entryTitle{
-    font-size: 20px;
-}
-.entryContent{
-    font-size: 16px;
-}
 
 .homeWine{
     padding: 5%;
@@ -255,10 +243,6 @@ table{
     .threeIcons:nth-child(3){
         margin-top: 4rem;
     }
-
-    /* .gradientBtn{
-        font-size: 20px;
-    } */
     
     th, td{
         font-size: 20px;
@@ -275,9 +259,18 @@ table{
     .homeH1{
         font-size: 60px;
     }
-
+    /* entry points */
     .entryPoints{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 1rem;
+        padding: 5%;
         justify-items: center;
-}
-/* --------------------- */
+    }
+    .entryTitle{
+        font-size: 20px;
+    }
+    .entryContent{
+        font-size: 16px;
+    }
 }

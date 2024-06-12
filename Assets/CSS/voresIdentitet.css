@@ -87,7 +87,7 @@ ul{
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
 }
 .eventsBtn{
@@ -108,22 +108,6 @@ ul{
 }
 /* ---- */
  
-@media screen and (min-width: 768px){
-    .entryPoints{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        gap: 1rem;
-        padding: 5%;
-    }
-    .entryTitle{
-        font-size: 20px;
-    }
-    .entryContent{
-        font-size: 16px;
-    }
- 
-   
-}
  
 @media screen and (min-width: 1024px){
     .voresIdentitetMobile{
@@ -182,5 +166,18 @@ ul{
 
 .herosectionVoresIdentitet{
     margin-top: 5rem;
+}
+
+.entryPoints{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    padding: 5%;
+}
+.entryTitle{
+    font-size: 20px;
+}
+.entryContent{
+    font-size: 16px;
 }
 }

@@ -182,7 +182,7 @@ iframe{
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center; 
 }
 
@@ -192,17 +192,8 @@ iframe{
         background-image: url(../Img/desktop_img/praktisk_Information/hero.png);
         min-height: 40vh;
     }
-
-    .entryPoints{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        gap: 1rem;
-        padding: 5%;
-    }
-    .entryTitle{
-        font-size: 20px;
-    }
 }
+
 
 @media(min-width: 1024px){
 .heroPI{
@@ -263,6 +254,20 @@ iframe{
     grid-template-columns: 1fr 1fr;
     align-items: start;
     margin-top: 3rem;
+}
+
+.entryPoints{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+    padding: 5%;
+    justify-items: center;
+}
+.entryTitle{
+    font-size: 20px;
+}
+.entryContent{
+    font-size: 16px;
 }
 
 

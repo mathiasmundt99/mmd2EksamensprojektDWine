@@ -417,6 +417,10 @@ body{
   .mail, .mobile, .location{
     justify-content: flex-start;
   }
+
+  .socialIcons img:hover{
+    scale: 1.2;
+  }
      
   }
 

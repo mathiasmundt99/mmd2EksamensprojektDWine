@@ -119,6 +119,18 @@ iframe{
     margin-bottom: -1rem;
 }
 
+.kontaktMT, .locationPI{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.locationPI .location{
+    display: flex;
+    align-items: center;
+}
+
 .gavekort{
     margin-left: 10%;
     margin-right: 10%;

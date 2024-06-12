@@ -66,7 +66,9 @@
             >
           </li>
           <li class="navItem">
-            <a href="praktiskInformation.html" class="navLink">Gavekort</a>
+            <a href="praktiskInformation.html#scroll" class="navLink"
+              >Gavekort</a
+            >
           </li>
           <li class="navItem">
             <a href="../HTML/VoresIdentitet.html" class="navLink"
@@ -118,18 +120,21 @@
       </section>
       <section class="iconMV">
         <div class="introIcon">
-          <hr>
-        <picture>
-          <source
-            media="(min-width: 1024px)"
-            srcset="../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/ikon1.svg" />
-          <img class="hrIcon"
-            src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/ikon1.svg"
-            alt="ikon"
-            loading="lazy" />
-        </picture>
-        <hr>
-      </div>  
+          <hr />
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="
+                ../Assets/Img/desktop_img/hold_Din_Fest_Hos_Os/ikon1.svg
+              " />
+            <img
+              class="hrIcon"
+              src="../Assets/Img/mobil_img/hold_Din_Fest_Hos_Os/ikon1.svg"
+              alt="ikon"
+              loading="lazy" />
+          </picture>
+          <hr />
+        </div>
         <p>
           *Alt kan skræddersyes til dine ønsker ift. type af mad og vin mm.
           Derfor er priserne vejledende, og vil tilpasses til dit behov.
@@ -462,6 +467,73 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <section class="kontakt">
+        <h3>Kontakt os</h3>
+        <article class="kontaktIcons"></article>
+        <article class="mail">
+          <img
+            src="../Assets/Img/mobil_img/footer/ikon_mail.svg"
+            alt="Mail ikon" />
+          <p><a href="mailto:vinbar@d-wine.dk">vinbar@d-wine.dk</a></p>
+        </article>
+        <article class="mobile">
+          <img
+            src="../Assets/Img/mobil_img/footer/ikon_mobil.svg"
+            alt="Mobil ikon" />
+          <p><a href="tel:+4541401231">+45 41 40 12 31</a></p>
+        </article>
+        <article class="location">
+          <img
+            src="../Assets/Img/mobil_img/footer/ikon_lokation.svg "
+            alt="Lokation ikon" />
+          <p>
+            <a
+              href="https://www.google.com/maps/place/Algade+54B,+9000+Aalborg/@57.0486302,9.9142743,16z/data=!3m1!4b1!4m6!3m5!1s0x4649328b448dc4ef:0xa3af8a8ce57e2d01!8m2!3d57.0486273!4d9.9168492!16s%2Fg%2F11pw1yxy7l?entry=ttu"
+              target="_blank"
+              >Algade 54B, 9000 Aalborg</a
+            >
+          </p>
+        </article>
+      </section>
+      <section class="socials">
+        <h3>Følg os på vores sociale medier</h3>
+        <div class="socialIcons">
+          <a href="https://www.instagram.com/dwine_bar/" target="_blank"
+            ><img
+              src="../Assets/Img/mobil_img/footer/ikon_instagram.svg"
+              alt="Instagram ikon"
+          /></a>
+          <a href="https://www.facebook.com/dwinebar" target="_blank"
+            ><img
+              src="../Assets/Img/mobil_img/footer/ikon_facebook.svg"
+              alt="facebook ikon"
+          /></a>
+        </div>
+      </section>
+      <section class="aabningstiderSection">
+        <h3>Åbningstider</h3>
+        <article class="aabningstider">
+          <div class="ugedage">
+            <p>Mandag</p>
+            <p>Tirsdag</p>
+            <p>Onsdag</p>
+            <p>Torsdag</p>
+            <p>Fredag</p>
+            <p>Lørdag</p>
+            <p>Søndag</p>
+          </div>
+          <div class="tidspukt">
+            <p>Lukket</p>
+            <p>16:00 - 23:00</p>
+            <p>16:00 - 23:00</p>
+            <p>16:00 - 23:00</p>
+            <p>14:30 - 02:00</p>
+            <p>14:30 - 02:00</p>
+            <p>Lukket</p>
+          </div>
+        </article>
+      </section>
+    </footer>
   </body>
 </html>

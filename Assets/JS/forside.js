@@ -38,7 +38,7 @@ function getHomePageData(categoryID,specificFunction){
         //her kaldes funktion som til sidst indsætter det de 3 vine på forisden ved hjælp af det specifikke id og den funktion hvor indholdet er indsat og appendet via.
         getHomePageData(13,renderForsideWinePosts)
 
-
+// Kilde https://www.w3schools.com/howto/howto_js_slideshow.asp
 let slideIndex = 0;
 
 function showSlides() {

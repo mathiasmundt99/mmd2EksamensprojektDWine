@@ -7,6 +7,10 @@ body {
     padding-right: 10%;
     margin-bottom: 2rem;
   }
+
+  .foodItem img{
+    max-width: 70%;
+  }
   
   /* Ikon */
 
@@ -41,6 +45,7 @@ body {
     z-index: 1000;
     position: sticky;
     top: 5px;
+    text-align: center;
   }
 
   .localNav a {
@@ -61,6 +66,18 @@ body {
   .foodItem{
     padding: 1rem;
   }
+
+  @media screen and (max-width: 475px){
+.localNav a{
+font-size: 13px;
+}
+.localNav{
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  padding-inline: 0;
+}
+  }
+
 
   @media  screen and (min-width: 768px){
 

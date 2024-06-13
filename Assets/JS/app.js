@@ -18,7 +18,7 @@ document.querySelectorAll(".navLink").forEach(closenav => closenav.addEventListe
 
 //variabler hvor vi gemmer baseurl og sektioner hvor den hentede data senere skal placeres i
 const baseURL = 'https://api.mastth.dk/wp-json/wp/v2';
-const sectionVin = document.querySelector(".månedensVine");
+const sectionVin = document.querySelector(".maanedensVine");
 const sectionEvents = document.querySelector(".eventsCTA")
 
 //Denne funktion bruges til at fetche data fra baseURL og denne funktion skal kaldes til sidst for at vise indholdet sammen med en funktion hvor indholdet er indsat og appendet.

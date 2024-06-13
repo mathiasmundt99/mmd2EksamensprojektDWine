@@ -13,7 +13,7 @@ html {
     align-items: center;
 }
 
-.introPI, .indendørs img, .indendørs p, .udendørs img, .udendørs p{
+.introPI, .indendoers img, .indendoers p, .udendoers img, .udendoers p{
     margin-left: 10%;
     margin-right: 10%;
 }
@@ -22,16 +22,16 @@ html {
     text-align: center;
 }
 
-.indendørs, .udendørs{
+.indendoers, .udendoers{
     background-color: var(--darkRed);
 }
 
-.indendørs h3, .udendørs h3{
+.indendoers h3, .udendoers h3{
     text-align: center;
     padding-top:2rem;
 }
 
-.indendørs img, .udendørs img{
+.indendoers img, .udendoers img{
     padding-bottom: 2rem;
     width: 100%;
     max-width: 80%;
@@ -44,7 +44,7 @@ html {
 
 /* åbningstider */
 .openingsHoursSection{
-    background-image: url(../Img/mobil_img/Forside/åbningstiderBg.png);
+    background-image: url(../Img/mobil_img/Forside/AabningstiderBg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -164,7 +164,7 @@ iframe{
     margin: 1rem auto;
 }
 .firstSubCard{
-    background-image: url(../Img/mobil_img/focused_Entry_Points/månedens_Vine.png);
+    background-image: url(../Img/mobil_img/focused_Entry_Points/maanedens_vine.png);
 }
 .secondSubCard{
     background-image: url(../Img/mobil_img/focused_Entry_Points/festlokaler.png);
@@ -208,7 +208,7 @@ iframe{
     justify-items: center;
 }
 
-.indendørs, .udendørs{
+.indendoers, .udendoers{
     display: flex;
     justify-content: center;
     flex-direction: column;

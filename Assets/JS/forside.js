@@ -1,6 +1,6 @@
 //Her laves variabler som skal bruges i senere funktioner
 const ForsidebaseURL = 'https://api.mastth.dk/wp-json/wp/v2';
-const forsideSectionVin = document.querySelector(".månedensVine");
+const forsideSectionVin = document.querySelector(".maanedensVine");
 
 //Denne funktion bruges til at fetche data fra ForsidebaseURL og denne funktion skal kaldes til sidst for at vise indholdet sammen med en funktion hvor indholdet er indsat og appendet. 
 function getHomePageData(categoryID,specificFunction){     

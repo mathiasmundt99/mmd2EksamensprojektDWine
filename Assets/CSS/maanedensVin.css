@@ -1,5 +1,5 @@
 .heroMV{
-    background-image: url(../Img/mobil_img/månedens_vin/hero.png);
+    background-image: url(../Img/mobil_img/maanedens_vin/hero.png);
     min-height: 40vh;
     margin-top: 6rem;
     background-size: cover;
@@ -20,12 +20,12 @@
     margin-top: 2rem;
 }
  
-.månedensVine{
+.maanedensVine{
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 6rem;
 }
-.månedensVine article{
+.maanedensVine article{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,18 +34,18 @@
     position: relative;
 }
 
-.månedensVine H3, .månedensVine p{
+.maanedensVine H3, .maanedensVine p{
     text-align: center;
 }
 
-.månedensVine img:nth-of-type(1){
+.maanedensVine img:nth-of-type(1){
     width: 30px;
     position: absolute;
     right:1%;
     top: 5%;
 }
 
-.månedensVine img:nth-of-type(2){
+.maanedensVine img:nth-of-type(2){
   height: auto;
   display: block;
   margin-left: auto;
@@ -53,28 +53,28 @@
   width: 50%;
 }
 
-.månedensVine article:nth-of-type(4) h3{
+.maanedensVine article:nth-of-type(4) h3{
     max-width: 90%;
     
 }
 
-.månedensVine article:nth-of-type(9) h3{
+.maanedensVine article:nth-of-type(9) h3{
     max-width: 50vw;
 }
 
-.månedensVine article:nth-of-type(3) img:nth-of-type(2){
+.maanedensVine article:nth-of-type(3) img:nth-of-type(2){
     width: 32%;
 }
 
-.månedensVine article:nth-of-type(5) img:nth-of-type(2){
+.maanedensVine article:nth-of-type(5) img:nth-of-type(2){
     width: 60%;
 }
 
-.månedensVine article:nth-of-type(12) img:nth-of-type(2){
+.maanedensVine article:nth-of-type(12) img:nth-of-type(2){
     width: 55%;
 }
 
-.månedensVine article a{
+.maanedensVine article a{
     background:linear-gradient(var(--background), var(--background)) padding-box,
     linear-gradient(#D97264, #F25D6A) border-box;
     color: var(--text);
@@ -87,13 +87,13 @@
     max-width: 250px;
 }
 
-.månedensVine article a:hover{
+.maanedensVine article a:hover{
     background-image: linear-gradient(to right,#f18475 0%, #F25D6A 20%, #e96b5a 90%, #ff7e6d 100%);
     color: white; 
 }
 
 @media(min-width: 768px){
-    .månedensVine{
+    .maanedensVine{
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-left: 5%;
@@ -102,45 +102,45 @@
     }
 
     .heroMV{
-        background-image: url(../Img/desktop_img/månedens_vin/hero.png);
+        background-image: url(../Img/desktop_img/maanedens_vin/hero.png);
         min-height: 50vh;
         margin-top: 5rem;
     }
 
-    .månedensVine article:nth-of-type(5) img:nth-of-type(2){
+    .maanedensVine article:nth-of-type(5) img:nth-of-type(2){
         width: 60%;
     }
     
-    .månedensVine article:nth-of-type(12) img:nth-of-type(2){
+    .maanedensVine article:nth-of-type(12) img:nth-of-type(2){
         width: 55%;
     }
     
-    .månedensVine article:nth-of-type(2) p:nth-of-type(1), .månedensVine article:nth-of-type(3) p:nth-of-type(1){
+    .maanedensVine article:nth-of-type(2) p:nth-of-type(1), .maanedensVine article:nth-of-type(3) p:nth-of-type(1){
         margin-bottom: 3rem;
     }
     
-    .månedensVine article:nth-of-type(6) p:nth-of-type(1){
+    .maanedensVine article:nth-of-type(6) p:nth-of-type(1){
         margin-top: -1px;
     }
     
-    .månedensVine article:nth-of-type(7) p:nth-of-type(1), .månedensVine article:nth-of-type(8) p:nth-of-type(1), .månedensVine article:nth-of-type(5) p:nth-of-type(1){
+    .maanedensVine article:nth-of-type(7) p:nth-of-type(1), .maanedensVine article:nth-of-type(8) p:nth-of-type(1), .maanedensVine article:nth-of-type(5) p:nth-of-type(1){
         margin-top: 2rem;
     }
     
-    .månedensVine article:nth-of-type(7) p:nth-of-type(2), .månedensVine article:nth-of-type(8) p:nth-of-type(2), .månedensVine article:nth-of-type(12) p:nth-of-type(2){
+    .maanedensVine article:nth-of-type(7) p:nth-of-type(2), .maanedensVine article:nth-of-type(8) p:nth-of-type(2), .maanedensVine article:nth-of-type(12) p:nth-of-type(2){
         margin-top: 4.5rem;
     }
     
-    .månedensVine article:nth-of-type(10) p:nth-of-type(2), .månedensVine article:nth-of-type(14) p:nth-of-type(2){
+    .maanedensVine article:nth-of-type(10) p:nth-of-type(2), .maanedensVine article:nth-of-type(14) p:nth-of-type(2){
         margin-top: 3.5rem;
     }
 
-    .månedensVine article{
+    .maanedensVine article{
         width: 30vw;
         position: relative;
     }
 
-    .månedensVine img:nth-of-type(1){
+    .maanedensVine img:nth-of-type(1){
         right: -10%;
     }
 }
@@ -148,7 +148,7 @@
 @media(min-width: 1024px){
 
 
-    .månedensVine{
+    .maanedensVine{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin-left: 5%;
@@ -157,12 +157,12 @@
     justify-items: center;
     }
 
-    .månedensVine h3{
+    .maanedensVine h3{
         font-size: 20px;
     }
 
 
-    .månedensVine article{
+    .maanedensVine article{
         align-self:baseline;
         position: relative;
         width: 80%;
@@ -174,21 +174,21 @@
 } */
 
 .heroMV{
-    background-image: url(../Img/desktop_img/månedens_vin/hero.png);
+    background-image: url(../Img/desktop_img/maanedens_vin/hero.png);
     min-height: 70vh;
 
 }
 
-.månedensVine img:nth-of-type(1){
+.maanedensVine img:nth-of-type(1){
     top: 20px;
     right:-8%;
     width: 40px;
 }
 
-.månedensVine img:nth-of-type(2){
+.maanedensVine img:nth-of-type(2){
     width: 60%;
 }
-.månedensVine img:nth-of-type(2):hover{
+.maanedensVine img:nth-of-type(2):hover{
     scale: 110%;
     transition: 0.5s;
 }

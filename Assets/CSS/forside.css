@@ -57,7 +57,7 @@ a{
 
 /* åbningstider */
 .openingsHoursSection{
-    background-image: url(../Img/mobil_img/Forside/åbningstiderBg.png);
+    background-image: url(../Img/mobil_img/Forside/AabningstiderBg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -115,7 +115,7 @@ table{
     background-image: url(../Img/mobil_img/focused_Entry_Points/quiz_Aften.png);
 }
 .secondSubCard{
-    background-image: url(../Img/mobil_img/focused_Entry_Points/jubilæumsfest.png);
+    background-image: url(../Img/mobil_img/focused_Entry_Points/jubilaeumsfest.png);
 }
 .cards{
     margin-top: 10px;

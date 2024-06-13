@@ -4,7 +4,7 @@ html {
 
 .heroPI{
     background-image: url(../Img/mobil_img/praktisk_Information/hero.png);
-    min-height: 40vh;
+    min-height: 30vh;
     margin-top: 6rem;
     background-size: cover;
     background-repeat: no-repeat;

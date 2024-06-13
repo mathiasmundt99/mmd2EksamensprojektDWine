@@ -1,7 +1,7 @@
 .heroMV{
     background-image: url(../Img/mobil_img/månedens_vin/hero.png);
-    min-height: 20vh;
-    margin-top: 5rem;
+    min-height: 30vh;
+    margin-top: 6rem;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -115,6 +115,7 @@
     .heroMV{
         background-image: url(../Img/desktop_img/månedens_vin/hero.png);
         min-height: 40vh;
+        margin-top: 5rem;
     }
 
     .månedensVine article:nth-of-type(5) img:nth-of-type(2){

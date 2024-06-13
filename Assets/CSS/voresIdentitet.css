@@ -2,7 +2,8 @@
     width: 100%;
     height: auto;
     position: relative;
-    margin-top: 5rem;
+    margin-top: 6rem;
+    min-height: 30vh;
 }
  
 .herosectionVoresIdentitet img{
@@ -166,6 +167,7 @@ ul{
 
 .herosectionVoresIdentitet{
     margin-top: 5rem;
+    min-height: 60vh;
 }
 
 .entryPoints{

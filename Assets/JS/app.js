@@ -74,7 +74,7 @@ function renderEventPosts(eventPosts){
     })
 }
 
-//Denne funktion skal bruges når indholdet til de specifikke eventposts skal generes dynamisk. Her fetches baseurl + posts + et id som skal bruges når de speccifikke eventposts skal vises.
+//Denne funktion skal bruges når indholdet til de specifikke eventposts, skal generes dynamisk. Her fetches baseurl + posts + et id som skal bruges når de speccifikke eventposts skal vises.
 function getIdData(id,specificFunction){     
     fetch(baseURL+`/posts/${id}`)
         .then(res => res.json())

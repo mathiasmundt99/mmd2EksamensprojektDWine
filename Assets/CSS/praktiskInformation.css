@@ -4,7 +4,7 @@ html {
 
 .heroPI{
     background-image: url(../Img/mobil_img/praktisk_Information/hero.png);
-    min-height: 30vh;
+    min-height: 40vh;
     margin-top: 6rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@ html {
 }
 
 .indendørs, .udendørs{
-    background-color: #4C121E;
+    background-color: var(--darkRed);
 }
 
 .indendørs h3, .udendørs h3{
@@ -147,21 +147,6 @@ iframe{
 }
 
 
-.specifikButton, .eventsBtn{
-    cursor: pointer;
-        color: var(--text);
-        font-size: 16px;
-        border-radius: 5px;
-        padding: 10px 40px;
-        border: 2.5px solid var(--text);
-        background-color: transparent;
-    }
-    
-    .specifikButton:hover, .eventsBtn:hover{
-        background-color: var(--text);
-        color: var(--background);
-    }
-
 /*Progressiv disclosure (entry points)*/
 .entryPoints{
     background-color: var(--background);
@@ -202,7 +187,7 @@ iframe{
     
     .heroPI{
         background-image: url(../Img/desktop_img/praktisk_Information/hero.png);
-        min-height: 40vh;
+        min-height: 50vh;
         margin-top: 5rem;
     }
 }
@@ -211,17 +196,16 @@ iframe{
 @media(min-width: 1024px){
 .heroPI{
     background-image: url(../Img/desktop_img/praktisk_Information/hero.png);
-    min-height: 60vh;
+    min-height: 70vh;
 }
 
 .faciliteter{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin-left: 3%;
     margin-right: 3%;
+    justify-items: center;
 }
 
 .indendørs, .udendørs{

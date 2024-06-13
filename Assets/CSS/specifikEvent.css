@@ -8,9 +8,29 @@
     align-items: center;
 }
 
-.specifikIntro, .specifikIcons, .specifikButton, .specfikDescription, .specifikImg{
+.specifikIntro, .specifikIcons, .specfikDescription, .specifikImg{
     margin-left: 10%;
     margin-right: 10%;
+}
+
+.specifikButton{
+    font-family: "Mulish", sans-serif;
+    cursor: pointer;
+    color: var(--text);
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 40px;
+    border: 2.5px solid var(--text);
+    margin: 1rem;
+    background-color: transparent;
+    display: inline-block;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.specifikButton:hover{
+    background-color: var(--text);
+    color: var(--background);
 }
 
 .specifikTime, .specifikLocation, .specifikPrice  {
@@ -22,20 +42,6 @@
 margin-bottom: 0;
 }
 
-/* .specifikButton, .eventsBtn{
-cursor: pointer;
-    color: var(--text);
-    font-size: 16px;
-    border-radius: 5px;
-    padding: 10px 40px;
-    border: 2.5px solid var(--text);
-    background-color: transparent;
-}
-
-.specifikButton:hover, .eventsBtn:hover{
-    background-color: var(--text);
-    color: var(--background);
-} */
 /*Progressiv disclosure (entry points)*/
 .entryPoints{
     background-color: var(--background);

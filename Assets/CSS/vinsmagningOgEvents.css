@@ -1,6 +1,6 @@
 .heroVE{
     background-image: url(../Img/mobil_img/vinsmagning_Og_Events/hero.png);
-    min-height: 30vh;
+    min-height: 40vh;
     margin-top: 6rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -15,17 +15,6 @@
     text-align: center;
     margin-top: 2rem;
 }
-
-/* .iconVE hr{
-    width: 100px;
-    border:none;
-    border-bottom: 1px solid #B2857F;
-    margin-bottom: 1rem;
-}
-
-.iconVE{
-    display: flex;
-} */
 
 .eventsCTA{
     margin-left: 10%;
@@ -54,6 +43,10 @@
     margin-top: -1rem;
 }
 
+.eventsCTA article div{
+    margin-top: 2rem;
+}
+
 main div a{
     cursor: pointer;
     color: var(--text);
@@ -61,7 +54,6 @@ main div a{
     border-radius: 5px;
     padding: 10px 40px;
     border: 2.5px solid var(--text);
-    margin-top: 10rem;
     background-color: transparent;
 }
 
@@ -82,7 +74,7 @@ main div a:hover{
 
     .heroVE{
         background-image: url(../Img/desktop_img/vinsmagning_Og_Events/hero.png);
-        min-height: 40vh;
+        min-height: 50vh;
     }
 
     .eventsCTA article{
@@ -97,7 +89,7 @@ main div a:hover{
 @media(min-width: 1024px){
     .heroVE{
         background-image: url(../Img/desktop_img/vinsmagning_Og_Events/hero.png);
-        min-height: 60vh;
+        min-height: 70vh;
         margin-top: 5rem;
     }
 }

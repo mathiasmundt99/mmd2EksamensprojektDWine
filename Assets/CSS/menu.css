@@ -13,17 +13,6 @@ body {
   }
   
   /* Ikon */
-
-  /* .iconMV hr{
-    width: 100px;
-    border:none;
-    border-bottom: 1px solid #B2857F;
-    margin-bottom: 1rem;
-  }
-
-  .iconMV{
-    display: flex;
-  } */
 .menuIcon{
   margin-bottom: 2rem;
 }
@@ -156,16 +145,6 @@ font-size: 13px;
       }
 
       /* Ikon */
-      /* .iconMV hr{
-        width: 100px;
-        border:none;
-        border-bottom: 1px solid #B2857F;
-        margin-bottom: 1rem;
-    } */
-    
-    /* .iconMV{
-        display: flex;
-    } */
     .hrMenu{
       width: 10rem;
     }

@@ -1,6 +1,6 @@
 .heroMV{
     background-image: url(../Img/mobil_img/månedens_vin/hero.png);
-    min-height: 30vh;
+    min-height: 40vh;
     margin-top: 6rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,18 +19,7 @@
     text-align: center;
     margin-top: 2rem;
 }
-/* 
-.iconMV hr{
-    width: 50px;
-    border:none;
-    border-bottom: 1px solid #B2857F;
-    margin-bottom: 1rem;
-} */
-
-/* .iconMV{
-    display: flex;
-} */
-
+ 
 .månedensVine{
     margin-left: 10%;
     margin-right: 10%;
@@ -114,7 +103,7 @@
 
     .heroMV{
         background-image: url(../Img/desktop_img/månedens_vin/hero.png);
-        min-height: 40vh;
+        min-height: 50vh;
         margin-top: 5rem;
     }
 
@@ -186,7 +175,7 @@
 
 .heroMV{
     background-image: url(../Img/desktop_img/månedens_vin/hero.png);
-    min-height: 60vh;
+    min-height: 70vh;
 
 }
 

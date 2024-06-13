@@ -68,7 +68,7 @@ function renderEventPosts(eventPosts){
         titleEvents.textContent = eventPost.acf.title
         date.textContent = eventPost.acf.location
         snackDescription.textContent = eventPost.acf.snack_description
-        buttonEventCta.innerHTML = "<a href ='specifikEvent.html?id="+ eventPost.id + "'>Læs mere om vinen</a>"
+        buttonEventCta.innerHTML = "<a href ='specifikEvent.html?id="+ eventPost.id + "'>Læs mere om eventet</a>"
         
         articleEvents.append(imageEvents, titleEvents, date, snackDescription, buttonEventCta)
     })

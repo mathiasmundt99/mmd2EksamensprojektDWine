@@ -342,6 +342,7 @@ body{
 
    #navArrangementer{
         color: #4C121E !important;
+        z-index: -100;
       
     }
 
